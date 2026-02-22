@@ -23,6 +23,8 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+const baseUrl = 'https://stolowkastudencka.pl';
+
 export async function generateMetadata({
   params,
 }: {
@@ -35,6 +37,12 @@ export async function generateMetadata({
   return {
     title: metadata.title,
     description: metadata.description,
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: Object.fromEntries(
+        locales.map((l) => [l, `${baseUrl}/${l}`])
+      ),
+    },
   };
 }
 

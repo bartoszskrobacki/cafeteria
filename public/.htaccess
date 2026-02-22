@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+# Redirect root to default locale
+RewriteRule ^$ /pl/ [R=301,L]
+
+# Redirect /pl or /en (without trailing slash) to /pl/ or /en/
+RewriteRule ^(pl|en)$ /$1/ [R=301,L]

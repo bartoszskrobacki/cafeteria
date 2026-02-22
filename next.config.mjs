@@ -5,6 +5,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   webpack(config, { dir }) {
     // Replicate what createNextIntlPlugin does for webpack.
     // Cannot use the plugin on FreeBSD as it imports @swc/core (no FreeBSD binary).
