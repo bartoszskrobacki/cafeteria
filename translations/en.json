@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "title": "Student Cafeteria",
+    "description": "Fresh dishes every day for students"
+  },
+  "navigation": {
+    "home": "HOME",
+    "menu": "MENU",
+    "conferences": "CONFERENCES",
+    "events": "EVENTS",
+    "about": "ABOUT US",
+    "gallery": "GALLERY",
+    "contact": "CONTACT"
+  },
+  "mobileMenu": {
+    "title": "STUDENT CAFETERIA",
+    "description": "Every day we serve homemade meals. For over 35 years we have been a meeting place for students where you can enjoy a delicious lunch and relax.",
+    "contactTitle": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "followUs": "Follow us"
+  },
+  "footer": {
+    "location": "Find Us Here",
+    "hours": "Opening Hours",
+    "weekdays": "Monday – Friday 11:00 AM – 5:00 PM",
+    "saturday": "Saturday Closed",
+    "sunday": "Sunday Closed",
+    "copyright": "© {year} Student Cafeteria. All rights reserved."
+  },
+  "hero": {
+    "title": "STUDENT CAFETERIA",
+    "subtitle": "Fresh dishes every day",
+    "cta": "View menu"
+  },
+  "dailyMenu": {
+    "title": "Daily Menu",
+    "subtitle": "Fresh dishes prepared every morning",
+    "dishOfDay": "Dish of the Day",
+    "special": "Special",
+    "soupOfDay": "Soup of the Day"
+  },
+  "promotions": {
+    "title": "Student Promotions",
+    "subtitle": "New deals every day just for you",
+    "checkIt": "Check it →",
+    "prevPromo": "Previous promotion",
+    "nextPromo": "Next promotion",
+    "goToPromo": "Go to promotion {number}",
+    "categories": {
+      "sets": "SETS",
+      "lunches": "LUNCHES",
+      "breakfasts": "BREAKFASTS",
+      "drinks": "DRINKS"
+    }
+  },
+  "menu": {
+    "mainDishes": {
+      "title": "MAIN DISHES",
+      "subtitle": "Fresh, homemade lunches prepared every day"
+    },
+    "drinks": {
+      "title": "DRINKS",
+      "subtitle": "Cold and hot beverages for every meal"
+    }
+  },
+  "contact": {
+    "writeToUs": "Write to Us",
+    "contactDetails": "Contact Details",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Smith",
+      "email": "Email",
+      "emailPlaceholder": "john.smith@student.com",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "openingHours": "Opening Hours",
+      "weekdayHours": "Monday - Friday: 11:00 AM - 5:00 PM",
+      "weekendHours": "Saturday - Sunday: Closed"
+    }
+  },
+  "about": {
+    "title": "Student Cafeteria since 1985",
+    "paragraphs": {
+      "p1": "For over 35 years, we have been serving students delicious, homemade meals at affordable prices. Our cafeteria is a place where tradition meets modernity, and every dish is prepared with passion and attention to detail.",
+      "p2": "We believe that a good meal is the foundation of a successful day of learning. That's why every morning our team of experienced chefs prepares fresh dishes from the finest ingredients. Our menu is varied and changes seasonally to always offer students something new and tasty.",
+      "p3": "We are proud that over the years we have become not only a place to eat, but also a meeting point for students where they can relax, chat, and recharge before their next classes."
+    },
+    "features": {
+      "freshProducts": {
+        "title": "Fresh Products",
+        "subtitle": "Daily",
+        "description": "All our dishes are prepared from fresh products delivered every morning."
+      },
+      "quality": {
+        "title": "Proven Quality",
+        "subtitle": "No Compromises",
+        "description": "We control the quality of every ingredient to ensure the highest standards."
+      },
+      "affordablePrices": {
+        "title": "Affordable Prices",
+        "subtitle": "For Students",
+        "description": "Our prices are tailored to the student budget without compromising quality."
+      },
+      "homeAtmosphere": {
+        "title": "Home Atmosphere",
+        "subtitle": "Like Mom's",
+        "description": "We create a friendly place where every student feels at home."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Our Place",
+    "items": {
+      "mainHall": {
+        "category": "Interiors",
+        "title": "Main Hall",
+        "description": "Spacious and cozy dining room for students"
+      },
+      "conferenceRoom": {
+        "category": "Spaces",
+        "title": "Conference Room",
+        "description": "Modern space for meetings and events"
+      },
+      "ourDishes": {
+        "category": "Menu",
+        "title": "Our Dishes",
+        "description": "Fresh and delicious meals every day"
+      },
+      "friendlyPlace": {
+        "category": "Atmosphere",
+        "title": "Friendly Place",
+        "description": "A meeting and relaxation spot"
+      },
+      "ourTeam": {
+        "category": "Kitchen",
+        "title": "Our Team",
+        "description": "Experienced chefs prepare the dishes"
+      },
+      "specialOccasions": {
+        "category": "Events",
+        "title": "Special Occasions",
+        "description": "We organize events for students"
+      }
+    }
+  },
+  "conferences": {
+    "title": "Organize with Us",
+    "description": "We invite you to organize various events at our cafeteria, where we perfect every detail with the utmost care. Thanks to years of experience and professional service, we guarantee that every celebration will be unforgettable.",
+    "halls": {
+      "small": {
+        "title": "Small Hall",
+        "description": "Ideal space for intimate business meetings, presentations, and training sessions. The room is equipped with modern multimedia equipment, ensuring comfortable conditions for meetings. Perfect for groups up to 20 people."
+      },
+      "large": {
+        "title": "Large Hall",
+        "description": "Spacious conference room designed for larger events, conferences, and training sessions. Equipped with professional sound, lighting, and projection systems. Ideal for groups up to 100 people, with flexible layout options."
+      }
+    },
+    "contactLink": "Contact us →"
+  },
+  "events": {
+    "title": "Special Events",
+    "description": "We organize events at the highest level. From intimate family celebrations to large corporate events - we provide comprehensive catering services, professional organization, and unforgettable experiences for your guests.",
+    "services": {
+      "catering": {
+        "title": "Catering",
+        "description": "Professional catering service for any event. Fresh products, signature menu, and experienced team of chefs. We will customize the offer to your needs and budget. We serve events from 20 to 500 people."
+      },
+      "grillsAndPicnics": {
+        "title": "BBQs and Picnics",
+        "description": "We organize corporate BBQs and team-building picnics. We provide equipment, service, and delicious grilled food. Perfect for outdoor meetings, team-buildings, and summer events. Delivery to specified location available."
+      },
+      "corporateEvents": {
+        "title": "Corporate Events",
+        "description": "Comprehensive organization of corporate events - conferences, training, team meetings, anniversaries, and business celebrations. Professional service, catering, and conference rooms equipped with modern AV equipment."
+      },
+      "communionsAndBaptisms": {
+        "title": "Communions and Baptisms",
+        "description": "Unique family celebrations by us. We will prepare a delicious menu, take care of decorations and service. We will create an unforgettable atmosphere for your family and guests. We will adapt to traditions and your expectations."
+      },
+      "wakes": {
+        "title": "Wakes and Special Gatherings",
+        "description": "With respect and care, we organize wakes and other special gatherings. We provide discreet service, appropriate menu, and intimate atmosphere. We will help with every detail so you can focus on what matters most."
+      }
+    },
+    "cta": {
+      "title": "Let's Plan Your Event Together",
+      "description": "Contact us to discuss the details of your event. We will prepare an offer tailored to your needs and budget.",
+      "button": "Contact us"
+    }
+  },
+  "hallFeatures": {
+    "title": "Our Room Equipment",
+    "airConditioning": "Air Conditioning",
+    "sound": "Sound System",
+    "wifi": "Wi-Fi",
+    "daylight": "Natural Light",
+    "screen": "Screen",
+    "projector": "Projector",
+    "microphone": "Microphone"
+  },
+  "menuItems": {
+    "dishes": {
+      "schnitzel": {
+        "name": "Pork Schnitzel",
+        "description": "With potatoes and white cabbage salad"
+      },
+      "pierogiRuskie": {
+        "name": "Russian Pierogi",
+        "description": "12 pieces with onion and sour cream"
+      },
+      "chickenSoup": {
+        "name": "Chicken Noodle Soup",
+        "description": "Traditional chicken broth with homemade noodles"
+      },
+      "beefStew": {
+        "name": "Beef Stew",
+        "description": "With buckwheat and pickled cucumber"
+      },
+      "crepes": {
+        "name": "Cheese Crepes",
+        "description": "4 pieces with fruit sauce"
+      },
+      "spaghetti": {
+        "name": "Spaghetti Bolognese",
+        "description": "With meat sauce and parmesan"
+      },
+      "roastChicken": {
+        "name": "Roast Chicken",
+        "description": "With rice and stir-fried vegetables"
+      },
+      "potatoPancakes": {
+        "name": "Potato Pancakes",
+        "description": "6 pieces with stew or sour cream"
+      }
+    },
+    "drinks": {
+      "compote": {
+        "name": "Compote",
+        "description": "Homemade compote from seasonal fruits"
+      },
+      "coffee": {
+        "name": "Coffee",
+        "description": "Espresso, Americano, or Cappuccino"
+      },
+      "tea": {
+        "name": "Tea",
+        "description": "Black, green, or fruit"
+      },
+      "juice": {
+        "name": "Natural Juice",
+        "description": "Orange, apple, or mixed fruits"
+      }
+    }
+  },
+  "studentPromotions": {
+    "studentSet": {
+      "title": "Student Set",
+      "subtitle": "Best choice",
+      "description": "Main dish + soup + drink. The perfect lunch set for a student at a great price!",
+      "category": "SETS"
+    },
+    "happyHour": {
+      "title": "Happy Hour",
+      "subtitle": "2:00 PM - 3:00 PM",
+      "description": "All main dishes at a reduced price. Eat well and save!",
+      "category": "LUNCHES"
+    },
+    "studentBreakfast": {
+      "title": "Student Breakfast",
+      "subtitle": "Until 11:00 AM",
+      "description": "Scrambled eggs, toast, coffee, and juice. Perfect breakfast before classes.",
+      "category": "BREAKFASTS"
+    }
+  },
+  "dailySpecials": {
+    "schnitzel": {
+      "name": "Pork Schnitzel",
+      "description": "Traditional pork schnitzel with potatoes, white cabbage salad, and gravy",
+      "category": "Dish of the Day"
+    },
+    "pierogiRuskie": {
+      "name": "Russian Pierogi",
+      "description": "12 homemade dumplings with cheese and potatoes, served with onion and sour cream",
+      "category": "Special"
+    },
+    "chickenSoup": {
+      "name": "Chicken Noodle Soup",
+      "description": "Traditional chicken broth with homemade noodles and vegetables",
+      "category": "Soup of the Day"
+    }
+  },
+  "languageSwitcher": {
+    "pl": "PL",
+    "en": "EN"
+  }
+}

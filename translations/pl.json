@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "title": "Stołówka Studencka",
+    "description": "Codziennie świeże dania dla studentów"
+  },
+  "navigation": {
+    "home": "HOME",
+    "menu": "MENU",
+    "conferences": "KONFERENCJE",
+    "events": "IMPREZY",
+    "about": "O NAS",
+    "gallery": "GALERIA",
+    "contact": "KONTAKT"
+  },
+  "mobileMenu": {
+    "title": "STOŁÓWKA STUDENCKA",
+    "description": "Codziennie serwujemy dla państwa domowe posiłki. Od ponad 35 lat jesteśmy miejscem spotkań studentów, gdzie można zjeść smaczny obiad i odpocząć.",
+    "contactTitle": "Kontakt",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adres",
+    "followUs": "Śledź nas"
+  },
+  "footer": {
+    "location": "Jesteśmy Tutaj",
+    "hours": "Godziny Otwarcia",
+    "weekdays": "Poniedziałek – Piątek 11:00 – 17:00",
+    "saturday": "Sobota Nieczynne",
+    "sunday": "Niedziela Nieczynne",
+    "copyright": "© {year} Stołówka Studencka. Wszystkie prawa zastrzeżone."
+  },
+  "hero": {
+    "title": "STOŁÓWKA STUDENCKA",
+    "subtitle": "Codziennie świeże dania",
+    "cta": "Zobacz menu"
+  },
+  "dailyMenu": {
+    "title": "Menu Dnia",
+    "subtitle": "Świeże dania przygotowywane codziennie rano",
+    "dishOfDay": "Danie Dnia",
+    "special": "Specjał",
+    "soupOfDay": "Zupa Dnia"
+  },
+  "promotions": {
+    "title": "Promocje dla Studentów",
+    "subtitle": "Codziennie nowe okazje specjalnie dla Ciebie",
+    "checkIt": "Sprawdź →",
+    "prevPromo": "Poprzednia promocja",
+    "nextPromo": "Następna promocja",
+    "goToPromo": "Przejdź do promocji {number}",
+    "categories": {
+      "sets": "ZESTAWY",
+      "lunches": "OBIADY",
+      "breakfasts": "ŚNIADANIA",
+      "drinks": "NAPOJE"
+    }
+  },
+  "menu": {
+    "mainDishes": {
+      "title": "DANIA GŁÓWNE",
+      "subtitle": "Świeże, domowe obiady przygotowywane każdego dnia"
+    },
+    "drinks": {
+      "title": "NAPOJE",
+      "subtitle": "Zimne i ciepłe napoje do każdego posiłku"
+    }
+  },
+  "contact": {
+    "writeToUs": "Napisz do Nas",
+    "contactDetails": "Dane Kontaktowe",
+    "form": {
+      "name": "Imię i Nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "email": "Email",
+      "emailPlaceholder": "jan.kowalski@student.pl",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Twoja wiadomość...",
+      "submit": "Wyślij Wiadomość"
+    },
+    "info": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "openingHours": "Godziny Otwarcia",
+      "weekdayHours": "Poniedziałek - Piątek: 11:00 - 17:00",
+      "weekendHours": "Sobota - Niedziela: Nieczynne"
+    }
+  },
+  "about": {
+    "title": "Stołówka Studencka od 1985",
+    "paragraphs": {
+      "p1": "Od ponad 35 lat serwujemy studentom pyszne, domowe posiłki w przystępnych cenach. Nasza stołówka to miejsce, gdzie tradycja spotyka się z nowoczesnością, a każde danie przygotowywane jest z pasją i dbałością o szczegóły.",
+      "p2": "Wierzymy, że dobry posiłek to podstawa udanego dnia nauki. Dlatego każdego ranka nasz zespół doświadczonych kucharzy przygotowuje świeże dania z najlepszych składników. Nasze menu jest zróżnicowane i zmienia się sezonowo, aby oferować studentom zawsze coś nowego i smacznego.",
+      "p3": "Jesteśmy dumni z tego, że przez lata staliśmy się nie tylko miejscem do jedzenia, ale także punktem spotkań studentów, gdzie można odpocząć, porozmawiać i naładować baterie przed kolejnymi zajęciami."
+    },
+    "features": {
+      "freshProducts": {
+        "title": "Świeże Produkty",
+        "subtitle": "Codziennie",
+        "description": "Wszystkie nasze dania przygotowujemy ze świeżych produktów, dostarczanych codziennie rano."
+      },
+      "quality": {
+        "title": "Sprawdzona Jakość",
+        "subtitle": "Bez Kompromisów",
+        "description": "Kontrolujemy jakość każdego składnika, aby zapewnić najwyższe standardy."
+      },
+      "affordablePrices": {
+        "title": "Przystępne Ceny",
+        "subtitle": "Dla Studentów",
+        "description": "Nasze ceny są dostosowane do budżetu studenta, bez utraty jakości."
+      },
+      "homeAtmosphere": {
+        "title": "Domowa Atmosfera",
+        "subtitle": "Jak u Mamy",
+        "description": "Tworzymy przyjazne miejsce, gdzie każdy student czuje się jak w domu."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Nasze Miejsce",
+    "items": {
+      "mainHall": {
+        "category": "Wnętrza",
+        "title": "Główna Sala",
+        "description": "Przestronna i przytulna sala jadalnia dla studentów"
+      },
+      "conferenceRoom": {
+        "category": "Przestrzenie",
+        "title": "Sala Konferencyjna",
+        "description": "Nowoczesne miejsce na spotkania i wydarzenia"
+      },
+      "ourDishes": {
+        "category": "Menu",
+        "title": "Nasze Dania",
+        "description": "Codziennie świeże i smaczne posiłki"
+      },
+      "friendlyPlace": {
+        "category": "Atmosfera",
+        "title": "Przyjazne Miejsce",
+        "description": "Miejsce spotkań i odpoczynku"
+      },
+      "ourTeam": {
+        "category": "Kuchnia",
+        "title": "Nasz Zespół",
+        "description": "Doświadczeni kucharze przygotowują dania"
+      },
+      "specialOccasions": {
+        "category": "Wydarzenia",
+        "title": "Specjalne Okazje",
+        "description": "Organizujemy wydarzenia dla studentów"
+      }
+    }
+  },
+  "conferences": {
+    "title": "Organizuj z nami",
+    "description": "Zapraszamy do organizowania różnorodnych wydarzeń w naszej stołówce, gdzie każdy detal dopracowujemy z najwyższą starannością. Dzięki wieloletniemu doświadczeniu i profesjonalnej obsłudze gwarantujemy, że każda uroczystość będzie niezapomniana.",
+    "halls": {
+      "small": {
+        "title": "Sala Mała",
+        "description": "Idealna przestrzeń dla kameralnych spotkań biznesowych, prezentacji i szkoleń. Sala wyposażona w nowoczesny sprzęt multimedialny, zapewniający komfortowe warunki do prowadzenia spotkań. Doskonała dla grup do 20 osób."
+      },
+      "large": {
+        "title": "Sala Duża",
+        "description": "Przestronna sala konferencyjna przeznaczona dla większych wydarzeń, konferencji i szkoleń. Wyposażona w profesjonalny system nagłośnienia, oświetlenia i projekcji. Idealna dla grup do 100 osób, z możliwością elastycznego dostosowania układu."
+      }
+    },
+    "contactLink": "Skontaktuj się →"
+  },
+  "events": {
+    "title": "Imprezy Okolicznościowe",
+    "description": "Organizujemy wydarzenia na najwyższym poziomie. Od kameralnych uroczystości rodzinnych po duże eventy firmowe - zapewniamy kompleksową obsługę cateringową, profesjonalną organizację i niezapomniane wrażenia dla Twoich gości.",
+    "services": {
+      "catering": {
+        "title": "Catering",
+        "description": "Profesjonalna obsługa cateringowa dla każdego wydarzenia. Świeże produkty, autorskie menu i doświadczony zespół kucharzy. Dostosujemy ofertę do Twoich potrzeb i budżetu. Obsługujemy imprezy od 20 do 500 osób."
+      },
+      "grillsAndPicnics": {
+        "title": "Grille i Pikniki",
+        "description": "Organizujemy grille firmowe i pikniki integracyjne. Zapewniamy sprzęt, obsługę i pyszne jedzenie z grilla. Idealnie na spotkania w plenerze, team-buildingi i eventy letnie. Możliwość dowozu na wskazane miejsce."
+      },
+      "corporateEvents": {
+        "title": "Eventy Firmowe",
+        "description": "Kompleksowa organizacja eventów firmowych - konferencje, szkolenia, spotkania integracyjne, jubileusze i uroczystości biznesowe. Profesjonalna obsługa, catering i sale konferencyjne wyposażone w nowoczesny sprzęt AV."
+      },
+      "communionsAndBaptisms": {
+        "title": "Komunie i Chrzciny",
+        "description": "Wyjątkowe uroczystości rodzinne w naszym wykonaniu. Przygotujemy smaczne menu, zadbamy o dekoracje i obsługę. Stworzymy niezapomnianą atmosferę dla Twojej rodziny i gości. Dopasujemy się do tradycji i Twoich oczekiwań."
+      },
+      "wakes": {
+        "title": "Stypy i Spotkania Okolicznościowe",
+        "description": "Z szacunkiem i troską organizujemy stypy oraz inne spotkania okolicznościowe. Zapewniamy dyskretną obsługę, odpowiednie menu i kameralną atmosferę. Pomożemy w każdym szczególe, abyś mógł skupić się na tym, co najważniejsze."
+      }
+    },
+    "cta": {
+      "title": "Zaplanujmy razem Twoje wydarzenie",
+      "description": "Skontaktuj się z nami, aby omówić szczegóły Twojej imprezy. Przygotujemy ofertę dostosowaną do Twoich potrzeb i budżetu.",
+      "button": "Skontaktuj się z nami"
+    }
+  },
+  "hallFeatures": {
+    "title": "Wyposażenie naszych sal",
+    "airConditioning": "Klimatyzacja",
+    "sound": "Nagłośnienie",
+    "wifi": "Internet",
+    "daylight": "Światło dzienne",
+    "screen": "Ekran",
+    "projector": "Projektor",
+    "microphone": "Mikrofon"
+  },
+  "menuItems": {
+    "dishes": {
+      "schnitzel": {
+        "name": "Kotlet Schabowy",
+        "description": "Z ziemniakami i surówką z białej kapusty"
+      },
+      "pierogiRuskie": {
+        "name": "Pierogi Ruskie",
+        "description": "12 sztuk z cebulką i śmietaną"
+      },
+      "chickenSoup": {
+        "name": "Rosół z Makaronem",
+        "description": "Tradycyjny rosół z kurczaka z domowym makaronem"
+      },
+      "beefStew": {
+        "name": "Gulasz Wołowy",
+        "description": "Z kaszą gryczaną i ogórkiem kiszonym"
+      },
+      "crepes": {
+        "name": "Naleśniki z Serem",
+        "description": "4 sztuki z sosem owocowym"
+      },
+      "spaghetti": {
+        "name": "Spaghetti Bolognese",
+        "description": "Z sosem mięsnym i parmezanem"
+      },
+      "roastChicken": {
+        "name": "Kurczak Pieczony",
+        "description": "Z ryżem i warzywami z patelni"
+      },
+      "potatoPancakes": {
+        "name": "Placki Ziemniaczane",
+        "description": "6 sztuk z gulaszem lub śmietaną"
+      }
+    },
+    "drinks": {
+      "compote": {
+        "name": "Kompot",
+        "description": "Domowy kompot z owoców sezonowych"
+      },
+      "coffee": {
+        "name": "Kawa",
+        "description": "Espresso, Americano lub Cappuccino"
+      },
+      "tea": {
+        "name": "Herbata",
+        "description": "Czarna, zielona lub owocowa"
+      },
+      "juice": {
+        "name": "Sok Naturalny",
+        "description": "Pomarańczowy, jabłkowy lub wieloowocowy"
+      }
+    }
+  },
+  "studentPromotions": {
+    "studentSet": {
+      "title": "Zestaw Studencki",
+      "subtitle": "Najlepszy wybór",
+      "description": "Danie główne + zupa + napój. Idealny zestaw na lunch dla studenta w super cenie!",
+      "category": "ZESTAWY"
+    },
+    "happyHour": {
+      "title": "Happy Hour",
+      "subtitle": "14:00 - 15:00",
+      "description": "Wszystkie dania główne w obniżonej cenie. Zjedz smacznie i zaoszczędź!",
+      "category": "OBIADY"
+    },
+    "studentBreakfast": {
+      "title": "Śniadanie Studenta",
+      "subtitle": "Do 11:00",
+      "description": "Jajecznica, tosty, kawa i sok. Idealne śniadanie przed zajęciami.",
+      "category": "ŚNIADANIA"
+    }
+  },
+  "dailySpecials": {
+    "schnitzel": {
+      "name": "Kotlet Schabowy",
+      "description": "Tradycyjny kotlet schabowy z ziemniakami, surówką z białej kapusty i sosem pieczeniowym",
+      "category": "Danie Dnia"
+    },
+    "pierogiRuskie": {
+      "name": "Pierogi Ruskie",
+      "description": "12 domowych pierogów z serem i ziemniakami, podawane z cebulką i śmietaną",
+      "category": "Specjał"
+    },
+    "chickenSoup": {
+      "name": "Rosół z Makaronem",
+      "description": "Tradycyjny rosół z kurczaka z domowym makaronem i warzywami",
+      "category": "Zupa Dnia"
+    }
+  },
+  "languageSwitcher": {
+    "pl": "PL",
+    "en": "EN"
+  }
+}
