@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(cd:*)",
+      "Bash(cd /Users/bskrobacki/workspace/BartekProjects/inter-api && npx tsc --noEmit 2>&1)",
+      "Bash(head:*)",
+      "Bash(find /Users/bskrobacki/workspace/BartekProjects/nextjs/cafeteria/node_modules/next-intl/dist/types/plugin -name \"types.d.ts\" | xargs cat 2>/dev/null)",
+      "Bash(cat:*)"
+    ]
+  }
+}
