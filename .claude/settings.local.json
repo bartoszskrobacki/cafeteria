@@ -8,7 +8,10 @@
       "Bash(cd /Users/bskrobacki/workspace/BartekProjects/inter-api && npx tsc --noEmit 2>&1)",
       "Bash(head:*)",
       "Bash(find /Users/bskrobacki/workspace/BartekProjects/nextjs/cafeteria/node_modules/next-intl/dist/types/plugin -name \"types.d.ts\" | xargs cat 2>/dev/null)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(cat /Users/bskrobacki/workspace/BartekProjects/nextjs/cafeteria/node_modules/@swc/core-darwin-arm64/package.json | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('version:', d['version']\\)\" 2>/dev/null && cat /Users/bskrobacki/workspace/BartekProjects/nextjs/cafeteria/node_modules/next-intl/node_modules/@swc/core/package.json | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('version:', d['version']\\); print\\('optDeps:', json.dumps\\(d.get\\('optionalDependencies', {}\\), indent=2\\)\\)\" 2>/dev/null)",
+      "Bash(cat /Users/bskrobacki/workspace/BartekProjects/nextjs/cafeteria/node_modules/@tailwindcss/oxide/package.json | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('optionalDependencies', {}\\), indent=2\\)\\)\" 2>/dev/null)",
+      "Bash(cat /Users/bskrobacki/workspace/BartekProjects/nextjs/cafeteria/node_modules/next/package.json | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); opts=d.get\\('optionalDependencies', {}\\); freebsd=[k for k in opts if 'freebsd' in k]; print\\('freebsd opts:', freebsd\\)\" 2>/dev/null)"
     ]
   }
 }
