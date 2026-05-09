@@ -55,16 +55,6 @@
       "drinks": "DRINKS"
     }
   },
-  "menu": {
-    "mainDishes": {
-      "title": "MAIN DISHES",
-      "subtitle": "Fresh, homemade lunches prepared every day"
-    },
-    "drinks": {
-      "title": "DRINKS",
-      "subtitle": "Cold and hot beverages for every meal"
-    }
-  },
   "contact": {
     "writeToUs": "Write to Us",
     "contactDetails": "Contact Details",
@@ -205,60 +195,6 @@
     "screen": "Screen",
     "projector": "Projector",
     "microphone": "Microphone"
-  },
-  "menuItems": {
-    "dishes": {
-      "schnitzel": {
-        "name": "Pork Schnitzel",
-        "description": "With potatoes and white cabbage salad"
-      },
-      "pierogiRuskie": {
-        "name": "Russian Pierogi",
-        "description": "12 pieces with onion and sour cream"
-      },
-      "chickenSoup": {
-        "name": "Chicken Noodle Soup",
-        "description": "Traditional chicken broth with homemade noodles"
-      },
-      "beefStew": {
-        "name": "Beef Stew",
-        "description": "With buckwheat and pickled cucumber"
-      },
-      "crepes": {
-        "name": "Cheese Crepes",
-        "description": "4 pieces with fruit sauce"
-      },
-      "spaghetti": {
-        "name": "Spaghetti Bolognese",
-        "description": "With meat sauce and parmesan"
-      },
-      "roastChicken": {
-        "name": "Roast Chicken",
-        "description": "With rice and stir-fried vegetables"
-      },
-      "potatoPancakes": {
-        "name": "Potato Pancakes",
-        "description": "6 pieces with stew or sour cream"
-      }
-    },
-    "drinks": {
-      "compote": {
-        "name": "Compote",
-        "description": "Homemade compote from seasonal fruits"
-      },
-      "coffee": {
-        "name": "Coffee",
-        "description": "Espresso, Americano, or Cappuccino"
-      },
-      "tea": {
-        "name": "Tea",
-        "description": "Black, green, or fruit"
-      },
-      "juice": {
-        "name": "Natural Juice",
-        "description": "Orange, apple, or mixed fruits"
-      }
-    }
   },
   "studentPromotions": {
     "studentSet": {

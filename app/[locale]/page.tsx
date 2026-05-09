@@ -3,6 +3,7 @@ import { HeroSection } from "../components/hero/HeroSection";
 import { DailyMenu } from "../components/dailymenu/DailyMenu";
 import { StudentPromotions } from "../components/promotions/StudentPromotions";
 import { MenuSection } from "../components/menu/MenuSection";
+import { getMenuCategories } from "../../lib/contentful";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -105,85 +106,29 @@ export default async function Home({ params }: Props) {
     },
   ];
 
-  const mainDishes = [
-    {
-      name: t("menuItems.dishes.schnitzel.name"),
-      description: t("menuItems.dishes.schnitzel.description"),
-      price: "12.99 zł",
-    },
-    {
-      name: t("menuItems.dishes.pierogiRuskie.name"),
-      description: t("menuItems.dishes.pierogiRuskie.description"),
-      price: "10.50 zł",
-    },
-    {
-      name: t("menuItems.dishes.chickenSoup.name"),
-      description: t("menuItems.dishes.chickenSoup.description"),
-      price: "8.99 zł",
-    },
-    {
-      name: t("menuItems.dishes.beefStew.name"),
-      description: t("menuItems.dishes.beefStew.description"),
-      price: "14.50 zł",
-    },
-    {
-      name: t("menuItems.dishes.crepes.name"),
-      description: t("menuItems.dishes.crepes.description"),
-      price: "9.99 zł",
-    },
-    {
-      name: t("menuItems.dishes.spaghetti.name"),
-      description: t("menuItems.dishes.spaghetti.description"),
-      price: "11.99 zł",
-    },
-    {
-      name: t("menuItems.dishes.roastChicken.name"),
-      description: t("menuItems.dishes.roastChicken.description"),
-      price: "13.50 zł",
-    },
-    {
-      name: t("menuItems.dishes.potatoPancakes.name"),
-      description: t("menuItems.dishes.potatoPancakes.description"),
-      price: "10.99 zł",
-    },
-  ];
-
-  const drinks = [
-    {
-      name: t("menuItems.drinks.compote.name"),
-      description: t("menuItems.drinks.compote.description"),
-      price: "3.00 zł",
-    },
-    {
-      name: t("menuItems.drinks.coffee.name"),
-      description: t("menuItems.drinks.coffee.description"),
-      price: "5.50 zł",
-    },
-    {
-      name: t("menuItems.drinks.tea.name"),
-      description: t("menuItems.drinks.tea.description"),
-      price: "4.00 zł",
-    },
-    {
-      name: t("menuItems.drinks.juice.name"),
-      description: t("menuItems.drinks.juice.description"),
-      price: "4.50 zł",
-    },
-  ];
+  const categories = await getMenuCategories();
 
   return (
     <>
-      <HeroSection title={t("hero.title")} subtitle={t("hero.subtitle")} ctaText={t("hero.cta")} ctaHref="/menu" backgroundImage="/main_banner.jpg" />
+      <HeroSection title={t("hero.title")} subtitle={t("hero.subtitle")} ctaText={t("hero.cta")} ctaHref={`/${locale}/menu`} backgroundImage="/main_banner.jpg" />
 
       <DailyMenu dishes={dailySpecials} />
 
       <StudentPromotions promotions={studentPromotions} />
 
-      <MenuSection title={t("menu.mainDishes.title")} subtitle={t("menu.mainDishes.subtitle")} items={mainDishes} columns={2} />
-
-      <div className="bg-secondary-background">
-        <MenuSection title={t("menu.drinks.title")} subtitle={t("menu.drinks.subtitle")} items={drinks} columns={2} />
-      </div>
+      {categories.map((category, index) => (
+        <div key={category.fields.name} className={index % 2 === 1 ? "bg-secondary-background" : ""}>
+          <MenuSection
+            title={category.fields.name.toUpperCase()}
+            items={(category.fields.listOfMeals ?? []).map((meal) => ({
+              name: meal.fields.name,
+              description: meal.fields.description ?? "",
+              price: `${meal.fields.price.toFixed(2)} zł`,
+            }))}
+            columns={2}
+          />
+        </div>
+      ))}
     </>
   );
 }

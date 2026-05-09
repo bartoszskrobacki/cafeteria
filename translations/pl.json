@@ -55,16 +55,6 @@
       "drinks": "NAPOJE"
     }
   },
-  "menu": {
-    "mainDishes": {
-      "title": "DANIA GŁÓWNE",
-      "subtitle": "Świeże, domowe obiady przygotowywane każdego dnia"
-    },
-    "drinks": {
-      "title": "NAPOJE",
-      "subtitle": "Zimne i ciepłe napoje do każdego posiłku"
-    }
-  },
   "contact": {
     "writeToUs": "Napisz do Nas",
     "contactDetails": "Dane Kontaktowe",
@@ -205,60 +195,6 @@
     "screen": "Ekran",
     "projector": "Projektor",
     "microphone": "Mikrofon"
-  },
-  "menuItems": {
-    "dishes": {
-      "schnitzel": {
-        "name": "Kotlet Schabowy",
-        "description": "Z ziemniakami i surówką z białej kapusty"
-      },
-      "pierogiRuskie": {
-        "name": "Pierogi Ruskie",
-        "description": "12 sztuk z cebulką i śmietaną"
-      },
-      "chickenSoup": {
-        "name": "Rosół z Makaronem",
-        "description": "Tradycyjny rosół z kurczaka z domowym makaronem"
-      },
-      "beefStew": {
-        "name": "Gulasz Wołowy",
-        "description": "Z kaszą gryczaną i ogórkiem kiszonym"
-      },
-      "crepes": {
-        "name": "Naleśniki z Serem",
-        "description": "4 sztuki z sosem owocowym"
-      },
-      "spaghetti": {
-        "name": "Spaghetti Bolognese",
-        "description": "Z sosem mięsnym i parmezanem"
-      },
-      "roastChicken": {
-        "name": "Kurczak Pieczony",
-        "description": "Z ryżem i warzywami z patelni"
-      },
-      "potatoPancakes": {
-        "name": "Placki Ziemniaczane",
-        "description": "6 sztuk z gulaszem lub śmietaną"
-      }
-    },
-    "drinks": {
-      "compote": {
-        "name": "Kompot",
-        "description": "Domowy kompot z owoców sezonowych"
-      },
-      "coffee": {
-        "name": "Kawa",
-        "description": "Espresso, Americano lub Cappuccino"
-      },
-      "tea": {
-        "name": "Herbata",
-        "description": "Czarna, zielona lub owocowa"
-      },
-      "juice": {
-        "name": "Sok Naturalny",
-        "description": "Pomarańczowy, jabłkowy lub wieloowocowy"
-      }
-    }
   },
   "studentPromotions": {
     "studentSet": {

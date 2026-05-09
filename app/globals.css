@@ -177,7 +177,7 @@ h6 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: clamp(28px, 5vw, 62px);
 }
 
 /* From Uiverse.io by NorthFishHasNa */

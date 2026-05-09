@@ -23,7 +23,7 @@ export const Navbar = () => {
         <Image src="/logo.png" alt="Logo" fill className="object-contain" />
       </Link>
       <nav className="overflow-x-auto hidden lg:block">
-        <ul className="flex flex-wrap gap-4 sm:gap-8 md:gap-12 lg:gap-16 h-full items-center text-sm justify-center font-bold text-[11px] tracking-[0.3em] underline-offset-3">
+        <ul className="flex flex-wrap gap-4 sm:gap-8 xl:gap-12 h-full items-center text-sm justify-center font-bold text-[11px] tracking-[0.3em] underline-offset-3">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link

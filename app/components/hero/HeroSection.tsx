@@ -27,7 +27,7 @@ export const HeroSection = ({ title, subtitle, ctaText = "Zobacz więcej", ctaHr
 
           {/* Text on top of logo */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            {subtitle && <p className="text-xs md:text-sm text-primary uppercase tracking-[0.2em] mb-2">{subtitle}</p>}
+            {subtitle && <p className="text-[9px] md:text-xs text-primary uppercase tracking-[0.2em] mb-2">{subtitle}</p>}
 
             <h1 className="text-2xl md:text-4xl lg:text-5xl text-primary mb-4 leading-tight font-serif">{title}</h1>
 
