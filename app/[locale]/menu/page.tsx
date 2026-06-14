@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { MenuSection } from "../../components/menu/MenuSection";
 import { getMenuCategories } from "../../../lib/contentful";
+import { pageMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "menu", "menu");
 }
 
 export default async function MenuPage({ params }: Props) {
@@ -21,7 +28,7 @@ export default async function MenuPage({ params }: Props) {
             items={(category.fields.listOfMeals ?? []).map((meal) => ({
               name: meal.fields.name,
               description: meal.fields.description ?? "",
-              price: `${meal.fields.price.toFixed(2)} zł`,
+              price: `${(meal.fields.price ?? 0).toFixed(2)} zł`,
             }))}
             columns={2}
           />

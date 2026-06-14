@@ -1,10 +1,17 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Hall } from "../../components/hallComponents/hall";
 import { Features } from "../../components/hallComponents/features";
 import { Link } from "@/i18n/navigation";
+import { pageMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "events", "imprezy");
 }
 
 export default async function EventsPage({ params }: Props) {

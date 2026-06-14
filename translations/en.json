@@ -1,7 +1,31 @@
 {
   "metadata": {
-    "title": "Student Cafeteria",
-    "description": "Fresh dishes every day for students"
+    "title": "Student Cafeteria – homemade lunches in Gliwice",
+    "description": "Fresh, homemade dishes for students every day at affordable prices. Daily menu, student deals, catering and event venues in Gliwice.",
+    "menu": {
+      "title": "Menu",
+      "description": "Check out our daily menu – homemade lunches, soups and main courses at student prices."
+    },
+    "about": {
+      "title": "About us",
+      "description": "For over 35 years we have served students homemade meals at affordable prices in Gliwice."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "See our interiors, halls and dishes. A friendly meeting place for students in Gliwice."
+    },
+    "events": {
+      "title": "Special events",
+      "description": "Catering, barbecues, corporate events, communions and family celebrations. Full event service."
+    },
+    "conferences": {
+      "title": "Conferences & venues",
+      "description": "Conference rooms for meetings, training and presentations – modern equipment and professional service."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with Student Cafeteria in Gliwice – address, phone, email and contact form."
+    }
   },
   "navigation": {
     "home": "HOME",
@@ -65,7 +89,12 @@
       "emailPlaceholder": "john.smith@student.com",
       "message": "Message",
       "messagePlaceholder": "Your message...",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! Your message has been sent.",
+      "error": "Something went wrong. Please try again or email kontakt@stolowka.pl.",
+      "validationRequired": "Please fill in all fields.",
+      "validationEmail": "Please enter a valid email address."
     },
     "info": {
       "address": "Address",

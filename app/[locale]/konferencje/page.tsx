@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Features } from "../../components/hallComponents/features";
 import { Halls } from "../../components/hallComponents/halls";
+import { pageMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "conferences", "konferencje");
 }
 
 export default async function ConferencesPage({ params }: Props) {

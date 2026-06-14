@@ -1,11 +1,15 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+import { ContactForm } from "../../components/contact/ContactForm";
+import { pageMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "contact", "kontakt");
 }
 
 export default async function ContactPage({ params }: Props) {
@@ -25,50 +29,7 @@ export default async function ContactPage({ params }: Props) {
               </h2>
               <div className="w-24 h-1 bg-coral-accent mb-8"></div>
 
-              <form className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-light-gray mb-2">
-                    {t("form.name")}
-                  </Label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder={t("form.namePlaceholder")}
-                    className="w-full"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="email" className="text-light-gray mb-2">
-                    {t("form.email")}
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder={t("form.emailPlaceholder")}
-                    className="w-full"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="message" className="text-light-gray mb-2">
-                    {t("form.message")}
-                  </Label>
-                  <Textarea
-                    id="message"
-                    placeholder={t("form.messagePlaceholder")}
-                    rows={6}
-                    className="w-full"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-6 uppercase tracking-wider"
-                >
-                  {t("form.submit")}
-                </Button>
-              </form>
+              <ContactForm />
             </div>
 
             <div>

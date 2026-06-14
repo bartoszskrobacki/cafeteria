@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stołówka Studencka</title>
+    <link rel="canonical" href="https://stolowkastudencka.pl/pl/" />
+    <!-- Fallback bez JS: przekierowanie na wersję polską. -->
+    <meta http-equiv="refresh" content="0; url=/pl/" />
+    <script>
+      // Progresywne ulepszenie: wybór języka na podstawie ustawień przeglądarki.
+      (function () {
+        var lang = (navigator.language || 'pl').toLowerCase();
+        var target = lang.indexOf('en') === 0 ? '/en/' : '/pl/';
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Przekierowywanie… / Redirecting… <a href="/pl/">Przejdź do strony</a></p>
+  </body>
+</html>

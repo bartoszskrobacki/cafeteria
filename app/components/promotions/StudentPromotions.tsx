@@ -88,6 +88,7 @@ export const StudentPromotions = ({ promotions }: StudentPromotionsProps) => {
                   src={currentPromo.image}
                   alt={currentPromo.title}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 75vw"
                   className="object-cover"
                 />
                 <div className="absolute top-6 right-6 bg-coral-accent text-white px-6 py-3 rounded-full">

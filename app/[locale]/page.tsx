@@ -123,7 +123,7 @@ export default async function Home({ params }: Props) {
             items={(category.fields.listOfMeals ?? []).map((meal) => ({
               name: meal.fields.name,
               description: meal.fields.description ?? "",
-              price: `${meal.fields.price.toFixed(2)} zł`,
+              price: `${(meal.fields.price ?? 0).toFixed(2)} zł`,
             }))}
             columns={2}
           />
