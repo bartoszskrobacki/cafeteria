@@ -9,75 +9,11 @@ interface Props {
   params: Promise<{ locale: string }>;
 }
 
-interface Meal {
-  id: number;
-  name: string;
-  description?: string;
-  additionals?: string;
-  price: number;
-}
-
-interface PromotionResponse {
-  promotion: {
-    id: string;
-    name: string;
-    meals: Meal[];
-  };
-  image: string;
-}
-
-async function fetchPromotion(): Promise<PromotionResponse | null> {
-  const baseUrl = process.env.INTER_API_URL;
-  const promotionId = process.env.PROMOTION_ID;
-
-  if (!baseUrl || !promotionId) return null;
-
-  try {
-    const res = await fetch(`${baseUrl}/promotion/${promotionId}`, {
-      next: { revalidate: 3600 },
-    });
-    if (!res.ok) return null;
-    return res.json();
-  } catch {
-    return null;
-  }
-}
-
 export default async function Home({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
   const t = await getTranslations();
-
-  const promotionData = await fetchPromotion();
-
-  const dailySpecials = promotionData
-    ? promotionData.promotion.meals.map((meal) => ({
-        name: meal.name,
-        description: meal.description ?? "",
-        price: `${meal.price} zł`,
-        category: meal.additionals,
-      }))
-    : [
-        {
-          name: t("dailySpecials.schnitzel.name"),
-          description: t("dailySpecials.schnitzel.description"),
-          price: "12.99 zł",
-          category: t("dailySpecials.schnitzel.category"),
-        },
-        {
-          name: t("dailySpecials.pierogiRuskie.name"),
-          description: t("dailySpecials.pierogiRuskie.description"),
-          price: "10.50 zł",
-          category: t("dailySpecials.pierogiRuskie.category"),
-        },
-        {
-          name: t("dailySpecials.chickenSoup.name"),
-          description: t("dailySpecials.chickenSoup.description"),
-          price: "8.99 zł",
-          category: t("dailySpecials.chickenSoup.category"),
-        },
-      ];
 
   const studentPromotions = [
     {
@@ -112,7 +48,7 @@ export default async function Home({ params }: Props) {
     <>
       <HeroSection title={t("hero.title")} subtitle={t("hero.subtitle")} ctaText={t("hero.cta")} ctaHref={`/${locale}/menu`} backgroundImage="/main_banner.jpg" />
 
-      <DailyMenu dishes={dailySpecials} />
+      <DailyMenu />
 
       <StudentPromotions promotions={studentPromotions} />
 

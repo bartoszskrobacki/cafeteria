@@ -61,6 +61,7 @@
   "dailyMenu": {
     "title": "Menu Dnia",
     "subtitle": "Świeże dania przygotowywane codziennie rano",
+    "loading": "Ładowanie menu...",
     "dishOfDay": "Danie Dnia",
     "special": "Specjał",
     "soupOfDay": "Zupa Dnia"

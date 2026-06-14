@@ -61,6 +61,7 @@
   "dailyMenu": {
     "title": "Daily Menu",
     "subtitle": "Fresh dishes prepared every morning",
+    "loading": "Loading menu...",
     "dishOfDay": "Dish of the Day",
     "special": "Special",
     "soupOfDay": "Soup of the Day"
