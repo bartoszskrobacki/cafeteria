@@ -1,7 +1,31 @@
 {
   "metadata": {
-    "title": "Stołówka Studencka",
-    "description": "Codziennie świeże dania dla studentów"
+    "title": "Stołówka Studencka – domowe obiady w Gliwicach",
+    "description": "Codziennie świeże, domowe dania dla studentów w przystępnych cenach. Menu dnia, promocje studenckie, catering i sale na wydarzenia w Gliwicach.",
+    "menu": {
+      "title": "Menu",
+      "description": "Sprawdź nasze codzienne menu – domowe obiady, zupy i dania główne w studenckich cenach."
+    },
+    "about": {
+      "title": "O nas",
+      "description": "Od ponad 35 lat serwujemy studentom domowe posiłki w przystępnych cenach w Gliwicach."
+    },
+    "gallery": {
+      "title": "Galeria",
+      "description": "Zobacz nasze wnętrza, sale i dania. Przyjazne miejsce spotkań studentów w Gliwicach."
+    },
+    "events": {
+      "title": "Imprezy okolicznościowe",
+      "description": "Catering, grille, eventy firmowe, komunie i uroczystości rodzinne. Kompleksowa obsługa wydarzeń."
+    },
+    "conferences": {
+      "title": "Konferencje i sale",
+      "description": "Sale konferencyjne na spotkania, szkolenia i prezentacje – nowoczesny sprzęt i profesjonalna obsługa."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się ze Stołówką Studencką w Gliwicach – adres, telefon, e-mail i formularz kontaktowy."
+    }
   },
   "navigation": {
     "home": "HOME",
@@ -65,7 +89,12 @@
       "emailPlaceholder": "jan.kowalski@student.pl",
       "message": "Wiadomość",
       "messagePlaceholder": "Twoja wiadomość...",
-      "submit": "Wyślij Wiadomość"
+      "submit": "Wyślij Wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Dziękujemy! Wiadomość została wysłana.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na kontakt@stolowka.pl.",
+      "validationRequired": "Wypełnij wszystkie pola.",
+      "validationEmail": "Podaj poprawny adres e-mail."
     },
     "info": {
       "address": "Adres",

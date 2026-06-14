@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FeaturesGrid } from "../../components/features/FeaturesGrid";
+import { pageMetadata } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ locale: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata(locale, "about", "o-nas");
 }
 
 export default async function AboutPage({ params }: Props) {
