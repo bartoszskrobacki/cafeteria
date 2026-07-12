@@ -13,12 +13,12 @@ interface MenuSectionProps {
 
 export const MenuSection = ({ title, subtitle, items, columns = 2 }: MenuSectionProps) => {
   return (
-    <section className="py-8 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section className="bg-white py-8">
+      <div className="container mx-auto max-w-6xl px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-dark-blue mb-4 uppercase tracking-wider">{title}</h2>
-          {subtitle && <p className="text-light-gray italic text-base md:text-lg">{subtitle}</p>}
+        <div className="mb-16 text-center">
+          <h2 className="text-dark-blue mb-4 text-4xl tracking-wider uppercase md:text-5xl lg:text-6xl">{title}</h2>
+          {subtitle && <p className="text-light-gray text-base italic md:text-lg">{subtitle}</p>}
         </div>
 
         {/* Menu Items Grid */}
@@ -26,17 +26,19 @@ export const MenuSection = ({ title, subtitle, items, columns = 2 }: MenuSection
           {items.map((item, index) => (
             <div key={index} className="group">
               {/* Item Name and Price */}
-              <div className="flex items-start justify-between gap-4 mb-2">
-                <h3 className="text-lg md:text-xl uppercase tracking-wide text-dark-blue font-serif flex-shrink-0">{item.name}</h3>
+              <div className="mb-2 flex items-start justify-between gap-4">
+                <h3 className="text-dark-blue font-serif text-lg tracking-wide uppercase md:flex-shrink-0 md:text-xl">
+                  {item.name}
+                </h3>
 
                 {/* Dotted Line */}
-                <div className="flex-1 border-b-2 border-dotted border-gray-300 mb-2 min-w-[20px]"></div>
+                <div className="mb-2 min-w-[20px] flex-1 border-b-2 border-dotted border-gray-300"></div>
 
-                <span className="text-coral-accent font-semibold text-lg flex-shrink-0">{item.price}</span>
+                <span className="text-coral-accent flex-shrink-0 text-lg font-semibold">{item.price}</span>
               </div>
 
               {/* Item Description */}
-              <p className="text-light-gray text-sm md:text-base leading-relaxed">{item.description}</p>
+              <p className="text-light-gray text-sm leading-relaxed md:text-base">{item.description}</p>
             </div>
           ))}
         </div>
