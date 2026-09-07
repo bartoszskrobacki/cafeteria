@@ -224,7 +224,8 @@
     "daylight": "Natural Light",
     "screen": "Screen",
     "projector": "Projector",
-    "microphone": "Microphone"
+    "microphone": "Microphone",
+    "catering": "Catering"
   },
   "studentPromotions": {
     "studentSet": {
