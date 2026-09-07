@@ -26,13 +26,13 @@ export const MenuSection = ({ title, subtitle, items, columns = 2 }: MenuSection
           {items.map((item, index) => (
             <div key={index} className="group">
               {/* Item Name and Price */}
-              <div className="mb-2 flex items-start justify-between gap-4">
-                <h3 className="text-dark-blue font-serif text-lg tracking-wide uppercase md:flex-shrink-0 md:text-xl">
+              <div className="mb-2 flex items-end justify-between gap-4">
+                <h3 className="text-dark-blue min-w-0 font-serif text-lg tracking-wide uppercase md:text-xl">
                   {item.name}
                 </h3>
 
                 {/* Dotted Line */}
-                <div className="mb-2 min-w-[20px] flex-1 border-b-2 border-dotted border-gray-300"></div>
+                <div className="mb-2 min-w-[20px] flex-1 shrink-0 border-b-2 border-dotted border-gray-300"></div>
 
                 <span className="text-coral-accent flex-shrink-0 text-lg font-semibold">{item.price}</span>
               </div>

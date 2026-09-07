@@ -1,6 +1,6 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -29,6 +29,7 @@ export function SheetDemo() {
         </svg>
       </SheetTrigger>
       <SheetContent className="bg-baby-blue flex w-full flex-col overflow-y-auto sm:max-w-md">
+        <SheetTitle className="sr-only">{t("title")}</SheetTitle>
         <div className="border-b border-gray-200 pt-8 pb-6 text-center">
           <div className="relative mx-auto mb-4 h-32 w-32">
             <Image src="/logo.png" alt="Logo" fill className="object-contain" />
@@ -38,19 +39,21 @@ export function SheetDemo() {
           <ul className="space-y-4">
             {navItems.map((item) => (
               <li key={item.href} className="text-center">
-                <Link
-                  href={item.href}
-                  className="text-dark-blue hover:text-coral-accent text-sm font-semibold tracking-wider uppercase transition-colors"
-                >
-                  {item.label}
-                </Link>
+                <SheetClose asChild>
+                  <Link
+                    href={item.href}
+                    className="text-dark-blue hover:text-coral-accent text-sm font-semibold tracking-wider uppercase transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </SheetClose>
               </li>
             ))}
           </ul>
         </nav>
 
         <div className="border-b border-gray-200 px-6 py-8 text-center">
-          <p className="text-light-gray text-sm leading-relaxed">{t("description")}</p>
+          <SheetDescription className="text-light-gray text-sm leading-relaxed">{t("description")}</SheetDescription>
         </div>
 
         <div className="space-y-4 px-6 py-8">

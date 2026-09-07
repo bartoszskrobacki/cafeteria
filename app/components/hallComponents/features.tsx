@@ -1,61 +1,58 @@
 import { useTranslations } from "next-intl";
 import {
-  AirConditioning,
-  Speaker,
+  AirVent,
+  Volume2,
   Wifi,
-  Daylight,
-  Screen,
+  Sun,
+  Monitor,
   Projector,
-  Microphone,
-} from "../icons";
+  Mic,
+  UtensilsCrossed,
+  type LucideIcon,
+} from "lucide-react";
 
-const hallFeatures = [
-  { translationKey: "airConditioning", iconName: "AirConditioning" },
-  { translationKey: "sound", iconName: "Speaker" },
-  { translationKey: "wifi", iconName: "Wifi" },
-  { translationKey: "daylight", iconName: "Daylight" },
-  { translationKey: "screen", iconName: "Screen" },
-  { translationKey: "projector", iconName: "Projector" },
-  { translationKey: "microphone", iconName: "Microphone" },
+const hallFeatures: { translationKey: string; Icon: LucideIcon }[] = [
+  { translationKey: "airConditioning", Icon: AirVent },
+  { translationKey: "sound", Icon: Volume2 },
+  { translationKey: "wifi", Icon: Wifi },
+  { translationKey: "daylight", Icon: Sun },
+  { translationKey: "screen", Icon: Monitor },
+  { translationKey: "projector", Icon: Projector },
+  { translationKey: "microphone", Icon: Mic },
+  { translationKey: "catering", Icon: UtensilsCrossed },
 ];
 
 export const Features = () => {
   const t = useTranslations("hallFeatures");
 
-  const iconMap = {
-    AirConditioning,
-    Speaker,
-    Wifi,
-    Daylight,
-    Screen,
-    Projector,
-    Microphone,
-  };
-
   return (
-    <div className="py-12 bg-beige-background">
+    <section className="py-16 md:py-24 bg-beige-background">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-dark-blue">
+        <h2 className="text-3xl md:text-4xl text-center text-dark-blue font-serif mb-6">
           {t("title")}
         </h2>
+        <div className="w-24 h-1 bg-coral-accent mx-auto mb-12 md:mb-16"></div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
-          {hallFeatures.map((feature, index) => {
-            const IconComponent =
-              iconMap[feature.iconName as keyof typeof iconMap];
-            return (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 flex items-center justify-center mb-4">
-                  <IconComponent className="text-coral-accent" />
-                </div>
-                <span className="text-2xl font-semibold text-dark-blue">
-                  {t(feature.translationKey)}
-                </span>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 md:gap-y-12">
+          {hallFeatures.map(({ translationKey, Icon }) => (
+            <li
+              key={translationKey}
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="w-16 h-16 md:w-20 md:h-20 mb-4 rounded-full bg-white border border-coral-accent/20 shadow-sm flex items-center justify-center transition-colors group-hover:border-coral-accent/60">
+                <Icon
+                  className="w-7 h-7 md:w-8 md:h-8 text-coral-accent"
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                />
               </div>
-            );
-          })}
-        </div>
+              <span className="text-base md:text-lg font-medium text-dark-blue">
+                {t(translationKey)}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, type TransitionEvent } from "react";
 import { useTranslations } from "next-intl";
 
 interface Promotion {
@@ -17,36 +17,52 @@ interface StudentPromotionsProps {
   promotions: Promotion[];
 }
 
+const AUTOPLAY_MS = 5000;
+
 export const StudentPromotions = ({ promotions }: StudentPromotionsProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
   const t = useTranslations("promotions");
+  const count = promotions.length;
 
-  const currentPromo = promotions[currentIndex];
+  // Track position in the extended slide list: [clone of last, ...promotions, clone of first].
+  // Position 1..count maps to real promotions; 0 and count+1 are clones used for the seamless loop.
+  const [position, setPosition] = useState(1);
+  const [animated, setAnimated] = useState(true);
 
+  const currentIndex = ((position - 1) % count + count) % count;
+
+  const goTo = useCallback((index: number) => {
+    setAnimated(true);
+    setPosition(index + 1);
+  }, []);
+
+  const handleNext = useCallback(() => {
+    setAnimated(true);
+    setPosition((prev) => Math.min(prev + 1, count + 1));
+  }, [count]);
+
+  const handlePrev = useCallback(() => {
+    setAnimated(true);
+    setPosition((prev) => Math.max(prev - 1, 0));
+  }, []);
+
+  // When we land on a clone, jump (without animation) to its real counterpart.
+  const handleTransitionEnd = (e: TransitionEvent<HTMLDivElement>) => {
+    if (e.target !== e.currentTarget) return;
+    if (position === count + 1) {
+      setAnimated(false);
+      setPosition(1);
+    } else if (position === 0) {
+      setAnimated(false);
+      setPosition(count);
+    }
+  };
+
+  // Auto-advance; restarts whenever the position changes so manual navigation resets the timer.
   useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 5000);
-
+    if (count <= 1) return;
+    const interval = setInterval(handleNext, AUTOPLAY_MS);
     return () => clearInterval(interval);
-  }, [currentIndex]);
-
-  const handleNext = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prev) => (prev + 1) % promotions.length);
-      setIsAnimating(false);
-    }, 300);
-  };
-
-  const handlePrev = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prev) => (prev - 1 + promotions.length) % promotions.length);
-      setIsAnimating(false);
-    }, 300);
-  };
+  }, [position, count, handleNext]);
 
   const categories = [
     t("categories.sets"),
@@ -54,6 +70,13 @@ export const StudentPromotions = ({ promotions }: StudentPromotionsProps) => {
     t("categories.breakfasts"),
     t("categories.drinks"),
   ];
+
+  const activeCategory = promotions[currentIndex]?.category.toUpperCase();
+
+  const slides =
+    count > 1
+      ? [promotions[count - 1], ...promotions, promotions[0]]
+      : promotions;
 
   return (
     <section className="py-16 md:py-24">
@@ -68,34 +91,72 @@ export const StudentPromotions = ({ promotions }: StudentPromotionsProps) => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
             <div className="lg:col-span-3 flex lg:flex-col gap-6 lg:gap-8 justify-center lg:justify-start overflow-x-auto lg:overflow-visible">
-              {categories.map((category, index) => (
-                <button
-                  key={index}
-                  className="text-dark-blue hover:text-coral-accent transition-colors uppercase tracking-[0.3em] text-sm font-serif whitespace-nowrap"
-                >
-                  {category}
-                </button>
-              ))}
+              {categories.map((category) => {
+                const isActive = category.toUpperCase() === activeCategory;
+                const targetIndex = promotions.findIndex(
+                  (promo) => promo.category.toUpperCase() === category.toUpperCase()
+                );
+                return (
+                  <button
+                    key={category}
+                    onClick={() => targetIndex >= 0 && goTo(targetIndex)}
+                    aria-current={isActive ? "true" : undefined}
+                    className={`relative uppercase tracking-[0.3em] text-sm font-serif whitespace-nowrap transition-colors text-left lg:pl-6 ${
+                      isActive
+                        ? "text-coral-accent font-semibold"
+                        : "text-dark-blue hover:text-coral-accent"
+                    }`}
+                  >
+                    <span
+                      aria-hidden
+                      className={`hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 h-0.5 bg-coral-accent transition-all duration-300 ${
+                        isActive ? "w-4" : "w-0"
+                      }`}
+                    />
+                    <span
+                      className={`block lg:inline border-b-2 pb-1 lg:border-b-0 lg:pb-0 transition-colors ${
+                        isActive ? "border-coral-accent" : "border-transparent"
+                      }`}
+                    >
+                      {category}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
 
             <div className="lg:col-span-9 relative h-[400px] md:h-[500px] overflow-hidden">
               <div
-                className={`absolute inset-0 transition-transform duration-500 ${
-                  isAnimating ? "translate-x-full" : "translate-x-0"
+                className={`flex h-full ${
+                  animated
+                    ? "transition-transform duration-700 ease-in-out motion-reduce:transition-none"
+                    : ""
                 }`}
+                style={{ transform: `translateX(-${(count > 1 ? position : 0) * 100}%)` }}
+                onTransitionEnd={handleTransitionEnd}
               >
-                <Image
-                  src={currentPromo.image}
-                  alt={currentPromo.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 75vw"
-                  className="object-cover"
-                />
-                <div className="absolute top-6 right-6 bg-coral-accent text-white px-6 py-3 rounded-full">
-                  <span className="text-2xl font-bold">
-                    {currentPromo.discount}
-                  </span>
-                </div>
+                {slides.map((promo, slideIndex) => {
+                  const isCurrent = count > 1 ? slideIndex === position : true;
+                  return (
+                    <div
+                      key={slideIndex}
+                      className="relative h-full w-full flex-shrink-0"
+                      aria-hidden={!isCurrent}
+                    >
+                      <Image
+                        src={promo.image}
+                        alt={promo.title}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 75vw"
+                        className="object-cover"
+                        priority={slideIndex === 1}
+                      />
+                      <div className="absolute top-6 right-6 bg-coral-accent text-white px-6 py-3 rounded-full">
+                        <span className="text-2xl font-bold">{promo.discount}</span>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
 
               <div className="absolute bottom-6 right-6 flex gap-2 z-20">
@@ -178,7 +239,7 @@ export const StudentPromotions = ({ promotions }: StudentPromotionsProps) => {
             {promotions.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
+                onClick={() => goTo(index)}
                 className={`w-2 h-2 rounded-full transition-colors ${
                   index === currentIndex
                     ? "bg-coral-accent"
