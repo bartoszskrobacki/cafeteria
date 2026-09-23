@@ -15,18 +15,18 @@ export interface ContentfulCategory {
   }
 }
 
-const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID!,
-  accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN!,
-  host: 'cdn.contentful.com',
-})
-
 export async function getMenuCategories(): Promise<ContentfulCategory[]> {
+  const space = process.env.CONTENTFUL_SPACE_ID
+  const accessToken = process.env.CONTENTFUL_DELIVERY_TOKEN
+
   // Brak konfiguracji → nie wywracaj builda, zwróć pustą listę.
-  if (!process.env.CONTENTFUL_SPACE_ID || !process.env.CONTENTFUL_DELIVERY_TOKEN) {
+  if (!space || !accessToken) {
     console.warn('[contentful] Brak CONTENTFUL_SPACE_ID / CONTENTFUL_DELIVERY_TOKEN — pomijam menu.')
     return []
   }
+
+  // Klient tworzony leniwie — createClient rzuca wyjątek przy braku tokenu.
+  const client = createClient({ space, accessToken, host: 'cdn.contentful.com' })
 
   try {
     const entries = await client.getEntries({
