@@ -56,11 +56,9 @@ export const DailyMenu = ({ tag = PROMOTION_TAG }: DailyMenuProps) => {
         name: meal.name,
         description: meal.description ?? "",
         price: `${meal.price} zł`,
-        category: meal.additionals,
+        category: meal.description ?? "",
       }))
     : fallbackDishes;
-
-  const promotionImage = data?.image ?? "/schabowy.jpg";
 
   return (
     <section className="py-16 md:py-24 bg-white">
@@ -73,7 +71,7 @@ export const DailyMenu = ({ tag = PROMOTION_TAG }: DailyMenuProps) => {
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-0">
           <div className="flex items-center z-10">
             <div className="relative h-[300px] md:h-[600px] max-h-[400px] z-10 w-full">
-              <Image src={promotionImage} alt="Menu Dnia" fill className="object-cover" />
+              <Image src="/schabowy.jpg" alt="Menu Dnia" fill className="object-cover" />
             </div>
           </div>
 
