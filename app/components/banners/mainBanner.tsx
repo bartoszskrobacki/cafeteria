@@ -16,7 +16,7 @@ export const MainBanner = () => {
             <Button variant="link" className="w-48 ">
               <span>Zobacz menu</span>
             </Button>
-            <div className="mt-8">Łuzycka Gliwice, 32 237 23 47</div>
+            <div className="mt-8">ul. Łużycka 24 Gliwice, 32 237 23 47</div>
           </div>
         </div>
       </div>

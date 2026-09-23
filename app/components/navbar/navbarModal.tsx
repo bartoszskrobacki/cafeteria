@@ -72,17 +72,17 @@ export function SheetDemo() {
             <div>
               <p className="text-light-gray mb-1 text-sm">{t("email")}</p>
               <a
-                href="mailto:stolowkastudencka@gmail.com"
+                href="mailto:stolowkalyzcka24@gmail.com"
                 className="text-dark-blue hover:text-coral-accent text-sm transition-colors"
               >
-                stolowkastudencka@gmail.com
+                stolowkalyzcka24@gmail.com
               </a>
             </div>
 
             <div>
               <p className="text-light-gray mb-1 text-sm">{t("address")}</p>
               <p className="text-dark-blue text-sm">
-                ul. Łużycka 123
+                ul. Łużycka 24
                 <br />
                 44-100 Gliwice
               </p>

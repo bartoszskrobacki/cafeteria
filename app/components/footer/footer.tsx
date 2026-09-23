@@ -15,10 +15,10 @@ const Footer = () => {
               {t("location")}
             </h3>
             <div className="space-y-2 text-light-gray text-sm">
-              <p>ul. Łużycka 123</p>
+              <p>ul. Łużycka 24</p>
               <p>44-100 Gliwice, Polska</p>
               <p className="pt-2">+48 32 237 23 47</p>
-              <p>stolowkastudencka@gmail.com</p>
+              <p>stolowkalyzcka24@gmail.com</p>
             </div>
           </div>
 
@@ -73,9 +73,12 @@ const Footer = () => {
               {t("hours")}
             </h3>
             <div className="space-y-2 text-light-gray text-sm">
-              <p>{t("weekdays")}</p>
-              <p className="pt-2">{t("saturday")}</p>
-              <p>{t("sunday")}</p>
+              <p className="text-dark-blue italic">{t("academicYear")}</p>
+              <p>{t("academicWeekdays")}</p>
+              <p>{t("academicWeekend")}</p>
+              <p className="pt-2 text-dark-blue italic">{t("holidays")}</p>
+              <p>{t("holidayWeekdays")}</p>
+              <p>{t("holidayWeekend")}</p>
             </div>
           </div>
         </div>

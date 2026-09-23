@@ -48,9 +48,12 @@
   "footer": {
     "location": "Jesteśmy Tutaj",
     "hours": "Godziny Otwarcia",
-    "weekdays": "Poniedziałek – Piątek 11:00 – 17:00",
-    "saturday": "Sobota Nieczynne",
-    "sunday": "Niedziela Nieczynne",
+    "academicYear": "Rok akademicki",
+    "academicWeekdays": "Poniedziałek – Piątek 8:00 – 18:00",
+    "academicWeekend": "Sobota – Niedziela 10:00 – 16:00",
+    "holidays": "Wakacje",
+    "holidayWeekdays": "Poniedziałek – Piątek 9:00 – 17:00",
+    "holidayWeekend": "Sobota – Niedziela Nieczynne",
     "copyright": "© {year} Stołówka Studencka. Wszystkie prawa zastrzeżone."
   },
   "hero": {
@@ -69,16 +72,13 @@
   "promotions": {
     "title": "Promocje dla Studentów",
     "subtitle": "Codziennie nowe okazje specjalnie dla Ciebie",
-    "checkIt": "Sprawdź →",
+    "everyday": "Codziennie -10% na wszystko z ważną legitymacją",
+    "everydayNote": "(oprócz alkoholu)",
+    "withStudentId": "Z ważną legitymacją studencką",
+    "today": "Dziś",
     "prevPromo": "Poprzednia promocja",
     "nextPromo": "Następna promocja",
-    "goToPromo": "Przejdź do promocji {number}",
-    "categories": {
-      "sets": "ZESTAWY",
-      "lunches": "OBIADY",
-      "breakfasts": "ŚNIADANIA",
-      "drinks": "NAPOJE"
-    }
+    "goToPromo": "Przejdź do promocji {number}"
   },
   "contact": {
     "writeToUs": "Napisz do Nas",
@@ -93,7 +93,7 @@
       "submit": "Wyślij Wiadomość",
       "sending": "Wysyłanie...",
       "success": "Dziękujemy! Wiadomość została wysłana.",
-      "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na kontakt@stolowka.pl.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz na stolowkalyzcka24@gmail.com.",
       "validationRequired": "Wypełnij wszystkie pola.",
       "validationEmail": "Podaj poprawny adres e-mail."
     },
@@ -101,8 +101,12 @@
       "address": "Adres",
       "phone": "Telefon",
       "openingHours": "Godziny Otwarcia",
-      "weekdayHours": "Poniedziałek - Piątek: 11:00 - 17:00",
-      "weekendHours": "Sobota - Niedziela: Nieczynne"
+      "academicYear": "Rok akademicki",
+      "academicWeekdays": "Poniedziałek - Piątek: 8:00 - 18:00",
+      "academicWeekend": "Sobota - Niedziela: 10:00 - 16:00",
+      "holidays": "Wakacje",
+      "holidayWeekdays": "Poniedziałek - Piątek: 9:00 - 17:00",
+      "holidayWeekend": "Sobota - Niedziela: Nieczynne"
     }
   },
   "about": {
@@ -228,23 +232,45 @@
     "catering": "Catering"
   },
   "studentPromotions": {
-    "studentSet": {
-      "title": "Zestaw Studencki",
-      "subtitle": "Najlepszy wybór",
-      "description": "Danie główne + zupa + napój. Idealny zestaw na lunch dla studenta w super cenie!",
-      "category": "ZESTAWY"
+    "monday": {
+      "day": "Poniedziałek",
+      "shortDay": "Pon",
+      "title": "Happy Hours",
+      "subtitle": "8:00 – 12:00 · razem -20%",
+      "highlight": "-20%",
+      "description": "W godz. 8:00–12:00 dodatkowe -10% na wszystko, czyli razem z rabatem studenckim -20%."
     },
-    "happyHour": {
-      "title": "Happy Hour",
-      "subtitle": "14:00 - 15:00",
-      "description": "Wszystkie dania główne w obniżonej cenie. Zjedz smacznie i zaoszczędź!",
-      "category": "OBIADY"
+    "tuesday": {
+      "day": "Wtorek",
+      "shortDay": "Wt",
+      "title": "Bułka + kawa",
+      "subtitle": "Śniadaniowy duet",
+      "highlight": "10 zł",
+      "description": "Świeża bułka i aromatyczna kawa w zestawie za jedyne 10 zł."
     },
-    "studentBreakfast": {
-      "title": "Śniadanie Studenta",
-      "subtitle": "Do 11:00",
-      "description": "Jajecznica, tosty, kawa i sok. Idealne śniadanie przed zajęciami.",
-      "category": "ŚNIADANIA"
+    "wednesday": {
+      "day": "Środa",
+      "shortDay": "Śr",
+      "title": "Drugi zestaw",
+      "subtitle": "Na drugi zestaw obiadowy",
+      "highlight": "-50%",
+      "description": "Drugi zestaw obiadowy o połowę taniej. Przyjdź ze znajomym!"
+    },
+    "thursday": {
+      "day": "Czwartek",
+      "shortDay": "Czw",
+      "title": "Zupa za złotówkę",
+      "subtitle": "Do zestawu obiadowego",
+      "highlight": "1 zł",
+      "description": "Do każdego zestawu obiadowego zupa za symboliczną złotówkę."
+    },
+    "friday": {
+      "day": "Piątek",
+      "shortDay": "Pt",
+      "title": "Podwójny rabat",
+      "subtitle": "Razem -20%",
+      "highlight": "-20%",
+      "description": "Dodatkowe -10% do rabatu studenckiego, czyli razem -20%."
     }
   },
   "dailySpecials": {

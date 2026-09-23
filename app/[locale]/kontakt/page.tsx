@@ -63,7 +63,7 @@ export default async function ContactPage({ params }: Props) {
                     {t("info.address")}
                   </h3>
                   <p className="text-light-gray leading-relaxed">
-                    ul. Łużycka 123
+                    ul. Łużycka 24
                     <br />
                     44-100 Gliwice
                     <br />
@@ -116,8 +116,16 @@ export default async function ContactPage({ params }: Props) {
                     {t("info.openingHours")}
                   </h3>
                   <div className="text-light-gray space-y-1">
-                    <p>{t("info.weekdayHours")}</p>
-                    <p>{t("info.weekendHours")}</p>
+                    <p className="text-dark-blue italic">
+                      {t("info.academicYear")}
+                    </p>
+                    <p>{t("info.academicWeekdays")}</p>
+                    <p>{t("info.academicWeekend")}</p>
+                    <p className="pt-2 text-dark-blue italic">
+                      {t("info.holidays")}
+                    </p>
+                    <p>{t("info.holidayWeekdays")}</p>
+                    <p>{t("info.holidayWeekend")}</p>
                   </div>
                 </div>
 
@@ -140,10 +148,10 @@ export default async function ContactPage({ params }: Props) {
                   </h3>
                   <p className="text-light-gray">
                     <a
-                      href="mailto:kontakt@stolowka.pl"
+                      href="mailto:stolowkalyzcka24@gmail.com"
                       className="hover:text-coral-accent transition-colors"
                     >
-                      kontakt@stolowka.pl
+                      stolowkalyzcka24@gmail.com
                     </a>
                   </p>
                 </div>

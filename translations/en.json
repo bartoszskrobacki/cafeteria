@@ -48,9 +48,12 @@
   "footer": {
     "location": "Find Us Here",
     "hours": "Opening Hours",
-    "weekdays": "Monday – Friday 11:00 AM – 5:00 PM",
-    "saturday": "Saturday Closed",
-    "sunday": "Sunday Closed",
+    "academicYear": "Academic year",
+    "academicWeekdays": "Monday – Friday 8:00 AM – 6:00 PM",
+    "academicWeekend": "Saturday – Sunday 10:00 AM – 4:00 PM",
+    "holidays": "Summer break",
+    "holidayWeekdays": "Monday – Friday 9:00 AM – 5:00 PM",
+    "holidayWeekend": "Saturday – Sunday Closed",
     "copyright": "© {year} Student Cafeteria. All rights reserved."
   },
   "hero": {
@@ -69,16 +72,13 @@
   "promotions": {
     "title": "Student Promotions",
     "subtitle": "New deals every day just for you",
-    "checkIt": "Check it →",
+    "everyday": "Every day -10% on everything with a valid student ID",
+    "everydayNote": "(excluding alcohol)",
+    "withStudentId": "With a valid student ID",
+    "today": "Today",
     "prevPromo": "Previous promotion",
     "nextPromo": "Next promotion",
-    "goToPromo": "Go to promotion {number}",
-    "categories": {
-      "sets": "SETS",
-      "lunches": "LUNCHES",
-      "breakfasts": "BREAKFASTS",
-      "drinks": "DRINKS"
-    }
+    "goToPromo": "Go to promotion {number}"
   },
   "contact": {
     "writeToUs": "Write to Us",
@@ -93,7 +93,7 @@
       "submit": "Send Message",
       "sending": "Sending...",
       "success": "Thank you! Your message has been sent.",
-      "error": "Something went wrong. Please try again or email kontakt@stolowka.pl.",
+      "error": "Something went wrong. Please try again or email stolowkalyzcka24@gmail.com.",
       "validationRequired": "Please fill in all fields.",
       "validationEmail": "Please enter a valid email address."
     },
@@ -101,8 +101,12 @@
       "address": "Address",
       "phone": "Phone",
       "openingHours": "Opening Hours",
-      "weekdayHours": "Monday - Friday: 11:00 AM - 5:00 PM",
-      "weekendHours": "Saturday - Sunday: Closed"
+      "academicYear": "Academic year",
+      "academicWeekdays": "Monday - Friday: 8:00 AM - 6:00 PM",
+      "academicWeekend": "Saturday - Sunday: 10:00 AM - 4:00 PM",
+      "holidays": "Summer break",
+      "holidayWeekdays": "Monday - Friday: 9:00 AM - 5:00 PM",
+      "holidayWeekend": "Saturday - Sunday: Closed"
     }
   },
   "about": {
@@ -228,23 +232,45 @@
     "catering": "Catering"
   },
   "studentPromotions": {
-    "studentSet": {
-      "title": "Student Set",
-      "subtitle": "Best choice",
-      "description": "Main dish + soup + drink. The perfect lunch set for a student at a great price!",
-      "category": "SETS"
+    "monday": {
+      "day": "Monday",
+      "shortDay": "Mon",
+      "title": "Happy Hours",
+      "subtitle": "8:00 – 12:00 · -20% in total",
+      "highlight": "-20%",
+      "description": "From 8:00 to 12:00 an extra -10% on everything, -20% in total with the student discount."
     },
-    "happyHour": {
-      "title": "Happy Hour",
-      "subtitle": "2:00 PM - 3:00 PM",
-      "description": "All main dishes at a reduced price. Eat well and save!",
-      "category": "LUNCHES"
+    "tuesday": {
+      "day": "Tuesday",
+      "shortDay": "Tue",
+      "title": "Roll + coffee",
+      "subtitle": "Breakfast duo",
+      "highlight": "10 zł",
+      "description": "A fresh roll and an aromatic coffee together for just 10 zł."
     },
-    "studentBreakfast": {
-      "title": "Student Breakfast",
-      "subtitle": "Until 11:00 AM",
-      "description": "Scrambled eggs, toast, coffee, and juice. Perfect breakfast before classes.",
-      "category": "BREAKFASTS"
+    "wednesday": {
+      "day": "Wednesday",
+      "shortDay": "Wed",
+      "title": "Second set",
+      "subtitle": "On your second lunch set",
+      "highlight": "-50%",
+      "description": "Your second lunch set at half price. Bring a friend!"
+    },
+    "thursday": {
+      "day": "Thursday",
+      "shortDay": "Thu",
+      "title": "Soup for 1 zł",
+      "subtitle": "With a lunch set",
+      "highlight": "1 zł",
+      "description": "Soup for a symbolic 1 zł with every lunch set."
+    },
+    "friday": {
+      "day": "Friday",
+      "shortDay": "Fri",
+      "title": "Double discount",
+      "subtitle": "-20% in total",
+      "highlight": "-20%",
+      "description": "An extra -10% on top of the student discount, -20% in total."
     }
   },
   "dailySpecials": {

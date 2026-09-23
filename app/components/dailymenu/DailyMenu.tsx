@@ -78,7 +78,7 @@ export const DailyMenu = ({ tag = PROMOTION_TAG }: DailyMenuProps) => {
           </div>
 
           <div className="relative md:ml-[-100px] ">
-            <div className="bg-white border border-gray-200 py-4 md:py-8 md:px-32  shadow-lg">
+            <div className="bg-white border border-gray-200 px-6 py-4 md:py-8 md:px-32 shadow-lg">
               <p className="text-light-gray text-sm italic mb-8">{today}</p>
 
               {isLoading ? (

@@ -4,15 +4,18 @@ export const businessInfo = {
   url: 'https://stolowkastudencka.pl',
   telephone: '+48322372347',
   telephoneDisplay: '+48 32 237 23 47',
-  email: 'kontakt@stolowka.pl',
+  email: 'stolowkalyzcka24@gmail.com',
   address: {
-    streetAddress: 'ul. Łużycka 123',
+    streetAddress: 'ul. Łużycka 24',
     postalCode: '44-100',
     addressLocality: 'Gliwice',
     addressCountry: 'PL',
   },
-  // Pn–Pt 11:00–17:00, weekend nieczynne
-  openingHours: [{ days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '11:00', closes: '17:00' }],
+  // Rok akademicki: Pn–Pt 8:00–18:00, Sb–Nd 10:00–16:00 (wakacje: Pn–Pt 9:00–17:00, weekend nieczynne)
+  openingHours: [
+    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '18:00' },
+    { days: ['Saturday', 'Sunday'], opens: '10:00', closes: '16:00' },
+  ],
   priceRange: '$',
   servesCuisine: 'Polish',
   logo: '/logo.png',

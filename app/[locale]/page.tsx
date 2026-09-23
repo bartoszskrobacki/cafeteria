@@ -15,32 +15,18 @@ export default async function Home({ params }: Props) {
 
   const t = await getTranslations();
 
-  const studentPromotions = [
-    {
-      title: t("studentPromotions.studentSet.title"),
-      subtitle: t("studentPromotions.studentSet.subtitle"),
-      description: t("studentPromotions.studentSet.description"),
-      discount: "-20%",
-      image: "/schabowy.jpg",
-      category: t("studentPromotions.studentSet.category"),
-    },
-    {
-      title: t("studentPromotions.happyHour.title"),
-      subtitle: t("studentPromotions.happyHour.subtitle"),
-      description: t("studentPromotions.happyHour.description"),
-      discount: "-30%",
-      image: "/main_banner.jpg",
-      category: t("studentPromotions.happyHour.category"),
-    },
-    {
-      title: t("studentPromotions.studentBreakfast.title"),
-      subtitle: t("studentPromotions.studentBreakfast.subtitle"),
-      description: t("studentPromotions.studentBreakfast.description"),
-      discount: "-15%",
-      image: "/main_banner.jpg",
-      category: t("studentPromotions.studentBreakfast.category"),
-    },
-  ];
+  const studentPromotions = (["monday", "tuesday", "wednesday", "thursday", "friday"] as const).map(
+    (day, index) => ({
+      id: day,
+      weekday: index + 1,
+      day: t(`studentPromotions.${day}.day`),
+      shortDay: t(`studentPromotions.${day}.shortDay`),
+      title: t(`studentPromotions.${day}.title`),
+      subtitle: t(`studentPromotions.${day}.subtitle`),
+      highlight: t(`studentPromotions.${day}.highlight`),
+      description: t(`studentPromotions.${day}.description`),
+    })
+  );
 
   const categories = await getMenuCategories();
 
