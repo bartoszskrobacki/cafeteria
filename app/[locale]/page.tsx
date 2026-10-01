@@ -2,8 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { HeroSection } from "../components/hero/HeroSection";
 import { DailyMenu } from "../components/dailymenu/DailyMenu";
 import { StudentPromotions } from "../components/promotions/StudentPromotions";
-import { MenuSection } from "../components/menu/MenuSection";
-import { getMenuCategories } from "../../lib/contentful";
+import { MenuCategories } from "../components/menu/MenuCategories";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -28,8 +27,6 @@ export default async function Home({ params }: Props) {
     })
   );
 
-  const categories = await getMenuCategories();
-
   return (
     <>
       <HeroSection title={t("hero.title")} subtitle={t("hero.subtitle")} ctaText={t("hero.cta")} ctaHref={`/${locale}/menu`} backgroundImage="/main_banner.jpg" />
@@ -38,19 +35,7 @@ export default async function Home({ params }: Props) {
 
       <StudentPromotions promotions={studentPromotions} />
 
-      {categories.map((category, index) => (
-        <div key={category.fields.name} className={index % 2 === 1 ? "bg-secondary-background" : ""}>
-          <MenuSection
-            title={category.fields.name.toUpperCase()}
-            items={(category.fields.listOfMeals ?? []).map((meal) => ({
-              name: meal.fields.name,
-              description: meal.fields.description ?? "",
-              price: `${(meal.fields.price ?? 0).toFixed(2)} zł`,
-            }))}
-            columns={2}
-          />
-        </div>
-      ))}
+      <MenuCategories />
     </>
   );
 }
