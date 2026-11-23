@@ -11,7 +11,7 @@ export const Halls = () => {
         description={t("small.description")}
         contactLink="/kontakt"
         imageSrc="/sala-mala.webp"
-        imageAlt="Small Hall"
+        imageAlt={t("small.title")}
         imageOnLeft={true}
       />
 
@@ -20,7 +20,7 @@ export const Halls = () => {
         description={t("large.description")}
         contactLink="/kontakt"
         imageSrc="/sala-mala.webp"
-        imageAlt="Large Hall"
+        imageAlt={t("large.title")}
         imageOnLeft={false}
       />
     </div>

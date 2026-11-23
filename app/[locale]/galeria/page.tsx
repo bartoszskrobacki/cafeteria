@@ -20,7 +20,7 @@ export default async function GalleryPage({ params }: Props) {
 
   const galleryItems = [
     {
-      image: "/main_banner.jpg",
+      image: "/main_banner.webp",
       category: t("items.mainHall.category"),
       title: t("items.mainHall.title"),
       description: t("items.mainHall.description"),
@@ -32,25 +32,25 @@ export default async function GalleryPage({ params }: Props) {
       description: t("items.conferenceRoom.description"),
     },
     {
-      image: "/main_banner.jpg",
+      image: "/main_banner.webp",
       category: t("items.ourDishes.category"),
       title: t("items.ourDishes.title"),
       description: t("items.ourDishes.description"),
     },
     {
-      image: "/main_banner.jpg",
+      image: "/main_banner.webp",
       category: t("items.friendlyPlace.category"),
       title: t("items.friendlyPlace.title"),
       description: t("items.friendlyPlace.description"),
     },
     {
-      image: "/main_banner.jpg",
+      image: "/main_banner.webp",
       category: t("items.ourTeam.category"),
       title: t("items.ourTeam.title"),
       description: t("items.ourTeam.description"),
     },
     {
-      image: "/main_banner.jpg",
+      image: "/main_banner.webp",
       category: t("items.specialOccasions.category"),
       title: t("items.specialOccasions.title"),
       description: t("items.specialOccasions.description"),
@@ -59,9 +59,9 @@ export default async function GalleryPage({ params }: Props) {
 
   return (
     <div className="min-h-screen pt-24">
-      <div className="text-center py-16">
-        <h2 className="text-4xl md:text-5xl text-dark-blue mb-4">{t("title")}</h2>
-        <div className="w-24 h-1 bg-coral-accent mx-auto"></div>
+      <div className="py-16 text-center">
+        <h1 className="text-dark-blue mb-4 text-4xl md:text-5xl">{t("title")}</h1>
+        <div className="bg-coral-accent mx-auto h-1 w-24"></div>
       </div>
 
       <GalleryGrid items={galleryItems} columns={3} />
