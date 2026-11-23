@@ -36,8 +36,8 @@ export default async function EventsPage({ params }: Props) {
             title={t("services.catering.title")}
             description={t("services.catering.description")}
             contactLink="/kontakt"
-            imageSrc="/main_banner.webp"
-            imageAlt={t("services.catering.title")}
+            imageSrc="/images/catering-sery.webp"
+            imageAlt="Catering"
             imageOnLeft={true}
           />
         </div>
@@ -49,8 +49,8 @@ export default async function EventsPage({ params }: Props) {
             title={t("services.grillsAndPicnics.title")}
             description={t("services.grillsAndPicnics.description")}
             contactLink="/kontakt"
-            imageSrc="/main_banner.webp"
-            imageAlt={t("services.grillsAndPicnics.title")}
+            imageSrc="/images/catering-wedliny.webp"
+            imageAlt="BBQs and Picnics"
             imageOnLeft={false}
           />
         </div>
@@ -62,8 +62,8 @@ export default async function EventsPage({ params }: Props) {
             title={t("services.corporateEvents.title")}
             description={t("services.corporateEvents.description")}
             contactLink="/kontakt"
-            imageSrc="/main_banner.webp"
-            imageAlt={t("services.corporateEvents.title")}
+            imageSrc="/images/event-sportowy-1.webp"
+            imageAlt="Corporate Events"
             imageOnLeft={true}
           />
         </div>
@@ -75,8 +75,8 @@ export default async function EventsPage({ params }: Props) {
             title={t("services.communionsAndBaptisms.title")}
             description={t("services.communionsAndBaptisms.description")}
             contactLink="/kontakt"
-            imageSrc="/main_banner.webp"
-            imageAlt={t("services.communionsAndBaptisms.title")}
+            imageSrc="/images/komunia.webp"
+            imageAlt="Communions and Baptisms"
             imageOnLeft={false}
           />
         </div>
@@ -88,8 +88,8 @@ export default async function EventsPage({ params }: Props) {
             title={t("services.wakes.title")}
             description={t("services.wakes.description")}
             contactLink="/kontakt"
-            imageSrc="/main_banner.webp"
-            imageAlt={t("services.wakes.title")}
+            imageSrc="/images/stol-nakryty.webp"
+            imageAlt="Wakes"
             imageOnLeft={true}
           />
         </div>

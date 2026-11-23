@@ -20,37 +20,37 @@ export default async function GalleryPage({ params }: Props) {
 
   const galleryItems = [
     {
-      image: "/main_banner.webp",
+      image: "/images/sala-duza.webp",
       category: t("items.mainHall.category"),
       title: t("items.mainHall.title"),
       description: t("items.mainHall.description"),
     },
     {
-      image: "/sala-mala.webp",
+      image: "/images/sala-konferencyjna.webp",
       category: t("items.conferenceRoom.category"),
       title: t("items.conferenceRoom.title"),
       description: t("items.conferenceRoom.description"),
     },
     {
-      image: "/main_banner.webp",
+      image: "/images/catering-sery.webp",
       category: t("items.ourDishes.category"),
       title: t("items.ourDishes.title"),
       description: t("items.ourDishes.description"),
     },
     {
-      image: "/main_banner.webp",
+      image: "/images/stol-swiateczny.webp",
       category: t("items.friendlyPlace.category"),
       title: t("items.friendlyPlace.title"),
       description: t("items.friendlyPlace.description"),
     },
     {
-      image: "/main_banner.webp",
+      image: "/images/catering-wedliny.webp",
       category: t("items.ourTeam.category"),
       title: t("items.ourTeam.title"),
       description: t("items.ourTeam.description"),
     },
     {
-      image: "/main_banner.webp",
+      image: "/images/event-sportowy-2.webp",
       category: t("items.specialOccasions.category"),
       title: t("items.specialOccasions.title"),
       description: t("items.specialOccasions.description"),
