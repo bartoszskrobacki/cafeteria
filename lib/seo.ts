@@ -6,7 +6,8 @@ import { businessInfo } from './business-info';
 export const baseUrl = businessInfo.url;
 
 // Lista tras (segmenty wspólne dla wszystkich języków).
-export const routes = ['', 'menu', 'o-nas', 'galeria', 'imprezy', 'konferencje', 'kontakt'] as const;
+// 'o-nas' tymczasowo usunięte — strona ukryta (kod w app/[locale]/_o-nas).
+export const routes = ['', 'menu', 'galeria', 'imprezy', 'konferencje', 'kontakt'] as const;
 
 function urlFor(locale: string, path = '') {
   const clean = path ? `/${path}` : '';

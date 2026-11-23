@@ -14,7 +14,8 @@ export function SheetDemo() {
     { href: "/menu", label: navT("menu") },
     { href: "/konferencje", label: navT("conferences") },
     { href: "/imprezy", label: navT("events") },
-    { href: "/o-nas", label: navT("about") },
+    // Strona "O nas" tymczasowo ukryta (kod w app/[locale]/_o-nas).
+    // { href: "/o-nas", label: navT("about") },
     { href: "/galeria", label: navT("gallery") },
     { href: "/kontakt", label: navT("contact") },
   ];

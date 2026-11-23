@@ -12,7 +12,8 @@ export const Navbar = () => {
     { href: "/menu", label: t("menu") },
     { href: "/konferencje", label: t("conferences") },
     { href: "/imprezy", label: t("events") },
-    { href: "/o-nas", label: t("about") },
+    // Strona "O nas" tymczasowo ukryta (kod w app/[locale]/_o-nas).
+    // { href: "/o-nas", label: t("about") },
     { href: "/galeria", label: t("gallery") },
     { href: "/kontakt", label: t("contact") },
   ];
