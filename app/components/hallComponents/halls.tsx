@@ -10,7 +10,7 @@ export const Halls = () => {
         title={t("small.title")}
         description={t("small.description")}
         contactLink="/kontakt"
-        imageSrc="/sala-mala.webp"
+        imageSrc="/images/sala-konferencyjna.webp"
         imageAlt="Small Hall"
         imageOnLeft={true}
       />
@@ -19,7 +19,7 @@ export const Halls = () => {
         title={t("large.title")}
         description={t("large.description")}
         contactLink="/kontakt"
-        imageSrc="/sala-mala.webp"
+        imageSrc="/images/sala-duza.webp"
         imageAlt="Large Hall"
         imageOnLeft={false}
       />
