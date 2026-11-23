@@ -7,8 +7,8 @@
       "description": "Sprawdź nasze codzienne menu – domowe obiady, zupy i dania główne w studenckich cenach."
     },
     "about": {
-      "title": "O nas – stołówka od 1985 roku",
-      "description": "Od ponad 40 lat serwujemy studentom domowe posiłki w przystępnych cenach – przy kampusie Politechniki Śląskiej w Gliwicach."
+      "title": "O nas – domowa kuchnia dla studentów",
+      "description": "Serwujemy studentom domowe posiłki w przystępnych cenach – przy kampusie Politechniki Śląskiej w Gliwicach."
     },
     "gallery": {
       "title": "Galeria – nasze wnętrza",
@@ -38,7 +38,7 @@
   },
   "mobileMenu": {
     "title": "STOŁÓWKA STUDENCKA",
-    "description": "Codziennie serwujemy dla państwa domowe posiłki. Od ponad 40 lat jesteśmy miejscem spotkań studentów, gdzie można zjeść smaczny obiad i odpocząć.",
+    "description": "Codziennie serwujemy dla państwa domowe posiłki. Jesteśmy miejscem spotkań studentów, gdzie można zjeść smaczny obiad i odpocząć.",
     "contactTitle": "Kontakt",
     "phone": "Telefon",
     "email": "Email",
@@ -118,11 +118,11 @@
     "intro": "Stołówka Studencka u Piotra, ul. Łużycka 24, 44-100 Gliwice – przy kampusie Politechniki Śląskiej."
   },
   "about": {
-    "title": "Stołówka Studencka od 1985",
+    "title": "Stołówka Studencka u Piotra",
     "paragraphs": {
-      "p1": "Od ponad 40 lat serwujemy studentom pyszne, domowe posiłki w przystępnych cenach. Nasza stołówka to miejsce, gdzie tradycja spotyka się z nowoczesnością, a każde danie przygotowywane jest z pasją i dbałością o szczegóły.",
+      "p1": "Serwujemy studentom pyszne, domowe posiłki w przystępnych cenach. Nasza stołówka to miejsce, gdzie tradycja spotyka się z nowoczesnością, a każde danie przygotowywane jest z pasją i dbałością o szczegóły.",
       "p2": "Wierzymy, że dobry posiłek to podstawa udanego dnia nauki. Dlatego każdego ranka nasz zespół doświadczonych kucharzy przygotowuje świeże dania z najlepszych składników. Nasze menu jest zróżnicowane i zmienia się sezonowo, aby oferować studentom zawsze coś nowego i smacznego.",
-      "p3": "Jesteśmy dumni z tego, że przez lata staliśmy się nie tylko miejscem do jedzenia, ale także punktem spotkań studentów, gdzie można odpocząć, porozmawiać i naładować baterie przed kolejnymi zajęciami."
+      "p3": "Jesteśmy dumni z tego, że jesteśmy nie tylko miejscem do jedzenia, ale także punktem spotkań studentów, gdzie można odpocząć, porozmawiać i naładować baterie przed kolejnymi zajęciami."
     },
     "features": {
       "freshProducts": {
@@ -310,7 +310,7 @@
   },
   "home": {
     "introTitle": "Domowe obiady przy Politechnice Śląskiej",
-    "introText": "Stołówka Studencka u Piotra to domowa kuchnia przy kampusie Politechniki Śląskiej w Gliwicach, przy ul. Łużyckiej 24. Od 1985 roku codziennie gotujemy zupy i drugie dania w studenckich cenach. Z ważną legitymacją studencką masz -10% na wszystko (oprócz alkoholu), a w poszczególne dni tygodnia czekają dodatkowe promocje."
+    "introText": "Stołówka Studencka u Piotra to domowa kuchnia przy kampusie Politechniki Śląskiej w Gliwicach, przy ul. Łużyckiej 24. Codziennie gotujemy zupy i drugie dania w studenckich cenach. Z ważną legitymacją studencką masz -10% na wszystko (oprócz alkoholu), a w poszczególne dni tygodnia czekają dodatkowe promocje."
   },
   "infoBar": {
     "address": "Adres",

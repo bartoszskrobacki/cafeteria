@@ -10,7 +10,6 @@ export const businessInfo = {
   telephone: "+48322372347",
   telephoneDisplay: "+48 32 237 23 47",
   email: "stolowkalyzcka24@gmail.com",
-  foundingDate: "1985",
   address: {
     streetAddress: "ul. Łużycka 24",
     postalCode: "44-100",
@@ -61,7 +60,6 @@ export function restaurantJsonLd(locale: string) {
         url: `${url}/`,
         telephone: businessInfo.telephone,
         email: businessInfo.email,
-        foundingDate: businessInfo.foundingDate,
         image: [`${url}${businessInfo.image}`, `${url}${businessInfo.ogImage}`],
         logo: `${url}${businessInfo.logo}`,
         priceRange: businessInfo.priceRange,

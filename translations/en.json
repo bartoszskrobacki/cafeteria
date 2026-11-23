@@ -7,8 +7,8 @@
       "description": "Check out our daily menu – homemade lunches, soups and main courses at student prices."
     },
     "about": {
-      "title": "About us – serving since 1985",
-      "description": "For over 40 years we have served students homemade meals at affordable prices, next to the Silesian University of Technology campus in Gliwice."
+      "title": "About us – home-style food for students",
+      "description": "We serve students homemade meals at affordable prices, next to the Silesian University of Technology campus in Gliwice."
     },
     "gallery": {
       "title": "Gallery – our interiors",
@@ -38,7 +38,7 @@
   },
   "mobileMenu": {
     "title": "STUDENT CAFETERIA",
-    "description": "Every day we serve homemade meals. For over 40 years we have been a meeting place for students where you can enjoy a delicious lunch and relax.",
+    "description": "Every day we serve homemade meals. We are a meeting place for students where you can enjoy a delicious lunch and relax.",
     "contactTitle": "Contact",
     "phone": "Phone",
     "email": "Email",
@@ -118,11 +118,11 @@
     "intro": "Stołówka Studencka u Piotra, Łużycka 24, 44-100 Gliwice – next to the Silesian University of Technology campus."
   },
   "about": {
-    "title": "Student Cafeteria since 1985",
+    "title": "Stołówka Studencka u Piotra",
     "paragraphs": {
-      "p1": "For over 40 years, we have been serving students delicious, homemade meals at affordable prices. Our cafeteria is a place where tradition meets modernity, and every dish is prepared with passion and attention to detail.",
+      "p1": "We serve students delicious, homemade meals at affordable prices. Our cafeteria is a place where tradition meets modernity, and every dish is prepared with passion and attention to detail.",
       "p2": "We believe that a good meal is the foundation of a successful day of learning. That's why every morning our team of experienced chefs prepares fresh dishes from the finest ingredients. Our menu is varied and changes seasonally to always offer students something new and tasty.",
-      "p3": "We are proud that over the years we have become not only a place to eat, but also a meeting point for students where they can relax, chat, and recharge before their next classes."
+      "p3": "We are proud that we are not only a place to eat, but also a meeting point for students where they can relax, chat, and recharge before their next classes."
     },
     "features": {
       "freshProducts": {
@@ -310,7 +310,7 @@
   },
   "home": {
     "introTitle": "Homemade lunches next to the Silesian University of Technology",
-    "introText": "Stołówka Studencka u Piotra is a home-style canteen next to the Silesian University of Technology campus in Gliwice, at Łużycka 24. Since 1985 we have been cooking soups and main courses every day at student prices. With a valid student ID you get 10% off everything (except alcohol), plus extra deals on individual weekdays."
+    "introText": "Stołówka Studencka u Piotra is a home-style canteen next to the Silesian University of Technology campus in Gliwice, at Łużycka 24. Every day we cook soups and main courses at student prices. With a valid student ID you get 10% off everything (except alcohol), plus extra deals on individual weekdays."
   },
   "infoBar": {
     "address": "Address",
