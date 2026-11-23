@@ -315,7 +315,8 @@
   "infoBar": {
     "address": "Address",
     "hours": "Opening hours",
-    "hoursValue": "Mon–Fri 8:00–18:00 · Sat 10:00–16:00 · Sun closed",
+    "hoursWeekdays": "Monday – Friday 8:00 – 18:00",
+    "hoursSaturday": "Saturday 10:00 – 16:00",
     "phone": "Phone",
     "directions": "Get directions"
   },

@@ -25,7 +25,8 @@ export const InfoBar = () => {
         </div>
         <div>
           <p className="mb-1 text-xs tracking-[0.2em] text-white/70 uppercase">{t("hours")}</p>
-          <p>{t("hoursValue")}</p>
+          <p>{t("hoursWeekdays")}</p>
+          <p>{t("hoursSaturday")}</p>
         </div>
         <div className="md:text-right">
           <p className="mb-1 text-xs tracking-[0.2em] text-white/70 uppercase">{t("phone")}</p>

@@ -315,7 +315,8 @@
   "infoBar": {
     "address": "Adres",
     "hours": "Godziny otwarcia",
-    "hoursValue": "Pn–Pt 8:00–18:00 · Sb 10:00–16:00 · Nd nieczynne",
+    "hoursWeekdays": "Poniedziałek – Piątek 8:00 – 18:00",
+    "hoursSaturday": "Sobota 10:00 – 16:00",
     "phone": "Telefon",
     "directions": "Wyznacz trasę"
   },
