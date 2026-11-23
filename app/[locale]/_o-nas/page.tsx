@@ -21,12 +21,7 @@ export default async function AboutPage({ params }: Props) {
   const features = [
     {
       icon: (
-        <svg
-          className="w-16 h-16"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -41,12 +36,7 @@ export default async function AboutPage({ params }: Props) {
     },
     {
       icon: (
-        <svg
-          className="w-16 h-16"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -61,12 +51,7 @@ export default async function AboutPage({ params }: Props) {
     },
     {
       icon: (
-        <svg
-          className="w-16 h-16"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -81,12 +66,7 @@ export default async function AboutPage({ params }: Props) {
     },
     {
       icon: (
-        <svg
-          className="w-16 h-16"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -103,16 +83,14 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <div className="min-h-screen pt-24">
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl text-dark-blue mb-6">
-              {t("title")}
-            </h2>
-            <div className="w-24 h-1 bg-coral-accent mx-auto mb-8"></div>
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="mb-12 text-center">
+            <h1 className="text-dark-blue mb-6 text-4xl md:text-5xl">{t("title")}</h1>
+            <div className="bg-coral-accent mx-auto mb-8 h-1 w-24"></div>
           </div>
 
-          <div className="space-y-6 text-light-gray text-base md:text-lg leading-relaxed">
+          <div className="text-light-gray space-y-6 text-base leading-relaxed md:text-lg">
             <p>{t("paragraphs.p1")}</p>
             <p>{t("paragraphs.p2")}</p>
             <p>{t("paragraphs.p3")}</p>

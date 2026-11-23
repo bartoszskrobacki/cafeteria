@@ -22,15 +22,11 @@ export default async function EventsPage({ params }: Props) {
 
   return (
     <div className="min-h-screen pt-24">
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl text-dark-blue mb-6 font-serif uppercase tracking-wider">
-            {t("title")}
-          </h1>
-          <div className="w-24 h-1 bg-coral-accent mx-auto mb-8"></div>
-          <p className="text-light-gray text-lg leading-relaxed">
-            {t("description")}
-          </p>
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto max-w-4xl px-4 text-center">
+          <h1 className="text-dark-blue mb-6 font-serif text-4xl tracking-wider uppercase md:text-5xl">{t("title")}</h1>
+          <div className="bg-coral-accent mx-auto mb-8 h-1 w-24"></div>
+          <p className="text-light-gray text-lg leading-relaxed">{t("description")}</p>
         </div>
       </section>
 
@@ -101,18 +97,14 @@ export default async function EventsPage({ params }: Props) {
 
       <Features />
 
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl text-dark-blue mb-6 font-serif">
-            {t("cta.title")}
-          </h2>
-          <div className="w-24 h-1 bg-coral-accent mx-auto mb-8"></div>
-          <p className="text-light-gray text-lg leading-relaxed mb-8">
-            {t("cta.description")}
-          </p>
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
+          <h2 className="text-dark-blue mb-6 font-serif text-3xl md:text-4xl">{t("cta.title")}</h2>
+          <div className="bg-coral-accent mx-auto mb-8 h-1 w-24"></div>
+          <p className="text-light-gray mb-8 text-lg leading-relaxed">{t("cta.description")}</p>
           <Link
             href="/kontakt"
-            className="inline-block bg-coral-accent text-white px-8 py-4 uppercase tracking-wider font-semibold hover:bg-primary transition-colors"
+            className="bg-coral-accent hover:bg-primary inline-block px-8 py-4 font-semibold tracking-wider text-white uppercase transition-colors"
           >
             {t("cta.button")}
           </Link>

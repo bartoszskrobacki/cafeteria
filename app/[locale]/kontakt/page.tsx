@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ContactForm } from "../../components/contact/ContactForm";
 import { pageMetadata } from "@/lib/seo";
+import { businessInfo } from "@/lib/business-info";
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -20,33 +21,31 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <div className="min-h-screen pt-24">
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16">
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="mb-16 text-center">
+            <h1 className="text-dark-blue mb-6 font-serif text-4xl tracking-wider uppercase md:text-5xl">
+              {t("pageTitle")}
+            </h1>
+            <div className="bg-coral-accent mx-auto mb-8 h-1 w-24"></div>
+            <p className="text-light-gray text-lg leading-relaxed">{t("intro")}</p>
+          </div>
+          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
             <div>
-              <h2 className="text-3xl md:text-4xl text-dark-blue mb-6">
-                {t("writeToUs")}
-              </h2>
-              <div className="w-24 h-1 bg-coral-accent mb-8"></div>
+              <h2 className="text-dark-blue mb-6 text-3xl md:text-4xl">{t("writeToUs")}</h2>
+              <div className="bg-coral-accent mb-8 h-1 w-24"></div>
 
               <ContactForm />
             </div>
 
             <div>
-              <h2 className="text-3xl md:text-4xl text-dark-blue mb-6">
-                {t("contactDetails")}
-              </h2>
-              <div className="w-24 h-1 bg-coral-accent mb-8"></div>
+              <h2 className="text-dark-blue mb-6 text-3xl md:text-4xl">{t("contactDetails")}</h2>
+              <div className="bg-coral-accent mb-8 h-1 w-24"></div>
 
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-serif text-dark-blue mb-3 flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-coral-accent"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                  <h3 className="text-dark-blue mb-3 flex items-center gap-2 font-serif text-xl">
+                    <svg className="text-coral-accent h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -69,16 +68,19 @@ export default async function ContactPage({ params }: Props) {
                     <br />
                     Polska
                   </p>
+                  <a
+                    href={businessInfo.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-coral-accent mt-2 inline-block py-2 underline underline-offset-4"
+                  >
+                    {t("info.directions")} →
+                  </a>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-serif text-dark-blue mb-3 flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-coral-accent"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                  <h3 className="text-dark-blue mb-3 flex items-center gap-2 font-serif text-xl">
+                    <svg className="text-coral-accent h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -89,23 +91,15 @@ export default async function ContactPage({ params }: Props) {
                     {t("info.phone")}
                   </h3>
                   <p className="text-light-gray">
-                    <a
-                      href="tel:+48322372347"
-                      className="hover:text-coral-accent transition-colors"
-                    >
+                    <a href="tel:+48322372347" className="hover:text-coral-accent transition-colors">
                       +48 32 237 23 47
                     </a>
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-serif text-dark-blue mb-3 flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-coral-accent"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                  <h3 className="text-dark-blue mb-3 flex items-center gap-2 font-serif text-xl">
+                    <svg className="text-coral-accent h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -116,27 +110,19 @@ export default async function ContactPage({ params }: Props) {
                     {t("info.openingHours")}
                   </h3>
                   <div className="text-light-gray space-y-1">
-                    <p className="text-dark-blue italic">
-                      {t("info.academicYear")}
-                    </p>
+                    <p className="text-dark-blue italic">{t("info.academicYear")}</p>
                     <p>{t("info.academicWeekdays")}</p>
                     <p>{t("info.academicWeekend")}</p>
-                    <p className="pt-2 text-dark-blue italic">
-                      {t("info.holidays")}
-                    </p>
+                    <p>{t("info.academicSunday")}</p>
+                    <p className="text-dark-blue pt-2 italic">{t("info.holidays")}</p>
                     <p>{t("info.holidayWeekdays")}</p>
                     <p>{t("info.holidayWeekend")}</p>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-serif text-dark-blue mb-3 flex items-center gap-2">
-                    <svg
-                      className="w-6 h-6 text-coral-accent"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                  <h3 className="text-dark-blue mb-3 flex items-center gap-2 font-serif text-xl">
+                    <svg className="text-coral-accent h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -147,10 +133,7 @@ export default async function ContactPage({ params }: Props) {
                     Email
                   </h3>
                   <p className="text-light-gray">
-                    <a
-                      href="mailto:stolowkalyzcka24@gmail.com"
-                      className="hover:text-coral-accent transition-colors"
-                    >
+                    <a href="mailto:stolowkalyzcka24@gmail.com" className="hover:text-coral-accent transition-colors">
                       stolowkalyzcka24@gmail.com
                     </a>
                   </p>

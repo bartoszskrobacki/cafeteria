@@ -1,30 +1,30 @@
 {
   "metadata": {
-    "title": "Stołówka Studencka – domowe obiady w Gliwicach",
-    "description": "Codziennie świeże, domowe dania dla studentów w przystępnych cenach. Menu dnia, promocje studenckie, catering i sale na wydarzenia w Gliwicach.",
+    "title": "Stołówka Studencka u Piotra – domowe obiady w Gliwicach",
+    "description": "Domowe obiady przy kampusie Politechniki Śląskiej – ul. Łużycka 24, Gliwice. Menu dnia, promocje dla studentów, catering i sale na wydarzenia.",
     "menu": {
-      "title": "Menu",
+      "title": "Menu – domowe obiady w Gliwicach",
       "description": "Sprawdź nasze codzienne menu – domowe obiady, zupy i dania główne w studenckich cenach."
     },
     "about": {
-      "title": "O nas",
-      "description": "Od ponad 35 lat serwujemy studentom domowe posiłki w przystępnych cenach w Gliwicach."
+      "title": "O nas – stołówka od 1985 roku",
+      "description": "Od ponad 40 lat serwujemy studentom domowe posiłki w przystępnych cenach – przy kampusie Politechniki Śląskiej w Gliwicach."
     },
     "gallery": {
-      "title": "Galeria",
+      "title": "Galeria – nasze wnętrza",
       "description": "Zobacz nasze wnętrza, sale i dania. Przyjazne miejsce spotkań studentów w Gliwicach."
     },
     "events": {
-      "title": "Imprezy okolicznościowe",
+      "title": "Imprezy i catering w Gliwicach",
       "description": "Catering, grille, eventy firmowe, komunie i uroczystości rodzinne. Kompleksowa obsługa wydarzeń."
     },
     "conferences": {
-      "title": "Konferencje i sale",
+      "title": "Sale konferencyjne w Gliwicach",
       "description": "Sale konferencyjne na spotkania, szkolenia i prezentacje – nowoczesny sprzęt i profesjonalna obsługa."
     },
     "contact": {
-      "title": "Kontakt",
-      "description": "Skontaktuj się ze Stołówką Studencką w Gliwicach – adres, telefon, e-mail i formularz kontaktowy."
+      "title": "Kontakt i dojazd",
+      "description": "Stołówka Studencka u Piotra, ul. Łużycka 24, 44-100 Gliwice. Telefon, e-mail, godziny otwarcia, dojazd i formularz kontaktowy."
     }
   },
   "navigation": {
@@ -38,23 +38,26 @@
   },
   "mobileMenu": {
     "title": "STOŁÓWKA STUDENCKA",
-    "description": "Codziennie serwujemy dla państwa domowe posiłki. Od ponad 35 lat jesteśmy miejscem spotkań studentów, gdzie można zjeść smaczny obiad i odpocząć.",
+    "description": "Codziennie serwujemy dla państwa domowe posiłki. Od ponad 40 lat jesteśmy miejscem spotkań studentów, gdzie można zjeść smaczny obiad i odpocząć.",
     "contactTitle": "Kontakt",
     "phone": "Telefon",
     "email": "Email",
     "address": "Adres",
-    "followUs": "Śledź nas"
+    "followUs": "Śledź nas",
+    "open": "Otwórz menu"
   },
   "footer": {
     "location": "Jesteśmy Tutaj",
     "hours": "Godziny Otwarcia",
     "academicYear": "Rok akademicki",
     "academicWeekdays": "Poniedziałek – Piątek 8:00 – 18:00",
-    "academicWeekend": "Sobota – Niedziela 10:00 – 16:00",
+    "academicWeekend": "Sobota 10:00 – 16:00",
     "holidays": "Wakacje",
     "holidayWeekdays": "Poniedziałek – Piątek 9:00 – 17:00",
     "holidayWeekend": "Sobota – Niedziela Nieczynne",
-    "copyright": "© {year} Stołówka Studencka. Wszystkie prawa zastrzeżone."
+    "copyright": "© {year} Stołówka Studencka u Piotra. Wszystkie prawa zastrzeżone.",
+    "academicSunday": "Niedziela nieczynne",
+    "directions": "Wyznacz trasę"
   },
   "hero": {
     "title": "STOŁÓWKA STUDENCKA",
@@ -67,7 +70,8 @@
     "loading": "Ładowanie menu...",
     "dishOfDay": "Danie Dnia",
     "special": "Specjał",
-    "soupOfDay": "Zupa Dnia"
+    "soupOfDay": "Zupa Dnia",
+    "imageAlt": "Kotlet schabowy z ziemniakami i surówką"
   },
   "promotions": {
     "title": "Promocje dla Studentów",
@@ -103,16 +107,20 @@
       "openingHours": "Godziny Otwarcia",
       "academicYear": "Rok akademicki",
       "academicWeekdays": "Poniedziałek - Piątek: 8:00 - 18:00",
-      "academicWeekend": "Sobota - Niedziela: 10:00 - 16:00",
+      "academicWeekend": "Sobota: 10:00 - 16:00",
       "holidays": "Wakacje",
       "holidayWeekdays": "Poniedziałek - Piątek: 9:00 - 17:00",
-      "holidayWeekend": "Sobota - Niedziela: Nieczynne"
-    }
+      "holidayWeekend": "Sobota - Niedziela: Nieczynne",
+      "academicSunday": "Niedziela: nieczynne",
+      "directions": "Wyznacz trasę w Google Maps"
+    },
+    "pageTitle": "Kontakt i dojazd",
+    "intro": "Stołówka Studencka u Piotra, ul. Łużycka 24, 44-100 Gliwice – przy kampusie Politechniki Śląskiej."
   },
   "about": {
     "title": "Stołówka Studencka od 1985",
     "paragraphs": {
-      "p1": "Od ponad 35 lat serwujemy studentom pyszne, domowe posiłki w przystępnych cenach. Nasza stołówka to miejsce, gdzie tradycja spotyka się z nowoczesnością, a każde danie przygotowywane jest z pasją i dbałością o szczegóły.",
+      "p1": "Od ponad 40 lat serwujemy studentom pyszne, domowe posiłki w przystępnych cenach. Nasza stołówka to miejsce, gdzie tradycja spotyka się z nowoczesnością, a każde danie przygotowywane jest z pasją i dbałością o szczegóły.",
       "p2": "Wierzymy, że dobry posiłek to podstawa udanego dnia nauki. Dlatego każdego ranka nasz zespół doświadczonych kucharzy przygotowuje świeże dania z najlepszych składników. Nasze menu jest zróżnicowane i zmienia się sezonowo, aby oferować studentom zawsze coś nowego i smacznego.",
       "p3": "Jesteśmy dumni z tego, że przez lata staliśmy się nie tylko miejscem do jedzenia, ale także punktem spotkań studentów, gdzie można odpocząć, porozmawiać i naładować baterie przed kolejnymi zajęciami."
     },
@@ -187,7 +195,8 @@
         "description": "Przestronna sala konferencyjna przeznaczona dla większych wydarzeń, konferencji i szkoleń. Wyposażona w profesjonalny system nagłośnienia, oświetlenia i projekcji. Idealna dla grup do 100 osób, z możliwością elastycznego dostosowania układu."
       }
     },
-    "contactLink": "Skontaktuj się →"
+    "contactLink": "Skontaktuj się →",
+    "heading": "Sale konferencyjne w Gliwicach"
   },
   "events": {
     "title": "Imprezy Okolicznościowe",
@@ -292,6 +301,26 @@
   },
   "languageSwitcher": {
     "pl": "PL",
-    "en": "EN"
+    "en": "EN",
+    "label": "Zmień język"
+  },
+  "common": {
+    "logoAlt": "Stołówka Studencka u Piotra – logo",
+    "facebookLabel": "Stołówka Studencka u Piotra na Facebooku"
+  },
+  "home": {
+    "introTitle": "Domowe obiady przy Politechnice Śląskiej",
+    "introText": "Stołówka Studencka u Piotra to domowa kuchnia przy kampusie Politechniki Śląskiej w Gliwicach, przy ul. Łużyckiej 24. Od 1985 roku codziennie gotujemy zupy i drugie dania w studenckich cenach. Z ważną legitymacją studencką masz -10% na wszystko (oprócz alkoholu), a w poszczególne dni tygodnia czekają dodatkowe promocje."
+  },
+  "infoBar": {
+    "address": "Adres",
+    "hours": "Godziny otwarcia",
+    "hoursValue": "Pn–Pt 8:00–18:00 · Sb 10:00–16:00 · Nd nieczynne",
+    "phone": "Telefon",
+    "directions": "Wyznacz trasę"
+  },
+  "menuPage": {
+    "title": "Menu",
+    "intro": "Domowe zupy, drugie dania i dodatki w studenckich cenach. Z ważną legitymacją studencką -10% na wszystko (oprócz alkoholu). Aktualne menu dnia znajdziesz na stronie głównej."
   }
 }

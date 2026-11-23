@@ -15,19 +15,17 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1" role="group" aria-label={t("label")}>
       {locales.map((loc) => (
         <button
           key={loc}
+          type="button"
+          lang={loc}
+          aria-current={locale === loc ? "true" : undefined}
           onClick={() => handleLocaleChange(loc)}
-          className={`
-            text-xs uppercase tracking-wider px-2 py-1 rounded transition-colors
-            ${
-              locale === loc
-                ? "bg-coral-accent text-white"
-                : "text-dark-blue hover:text-coral-accent"
-            }
-          `}
+          className={`flex min-h-11 min-w-11 items-center justify-center rounded px-2 text-xs tracking-wider uppercase transition-colors ${
+            locale === loc ? "bg-coral-accent text-white" : "text-dark-blue hover:text-coral-accent"
+          } `}
         >
           {t(loc)}
         </button>

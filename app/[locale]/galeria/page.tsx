@@ -59,9 +59,9 @@ export default async function GalleryPage({ params }: Props) {
 
   return (
     <div className="min-h-screen pt-24">
-      <div className="text-center py-16">
-        <h2 className="text-4xl md:text-5xl text-dark-blue mb-4">{t("title")}</h2>
-        <div className="w-24 h-1 bg-coral-accent mx-auto"></div>
+      <div className="py-16 text-center">
+        <h1 className="text-dark-blue mb-4 text-4xl md:text-5xl">{t("title")}</h1>
+        <div className="bg-coral-accent mx-auto h-1 w-24"></div>
       </div>
 
       <GalleryGrid items={galleryItems} columns={3} />

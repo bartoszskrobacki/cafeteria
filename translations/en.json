@@ -1,30 +1,30 @@
 {
   "metadata": {
-    "title": "Student Cafeteria – homemade lunches in Gliwice",
-    "description": "Fresh, homemade dishes for students every day at affordable prices. Daily menu, student deals, catering and event venues in Gliwice.",
+    "title": "Stołówka Studencka u Piotra – homemade lunches in Gliwice",
+    "description": "Homemade lunches next to the Silesian University of Technology campus – Łużycka 24, Gliwice. Daily menu, student deals, catering and event rooms.",
     "menu": {
-      "title": "Menu",
+      "title": "Menu – homemade lunches in Gliwice",
       "description": "Check out our daily menu – homemade lunches, soups and main courses at student prices."
     },
     "about": {
-      "title": "About us",
-      "description": "For over 35 years we have served students homemade meals at affordable prices in Gliwice."
+      "title": "About us – serving since 1985",
+      "description": "For over 40 years we have served students homemade meals at affordable prices, next to the Silesian University of Technology campus in Gliwice."
     },
     "gallery": {
-      "title": "Gallery",
+      "title": "Gallery – our interiors",
       "description": "See our interiors, halls and dishes. A friendly meeting place for students in Gliwice."
     },
     "events": {
-      "title": "Special events",
+      "title": "Events and catering in Gliwice",
       "description": "Catering, barbecues, corporate events, communions and family celebrations. Full event service."
     },
     "conferences": {
-      "title": "Conferences & venues",
+      "title": "Conference rooms in Gliwice",
       "description": "Conference rooms for meetings, training and presentations – modern equipment and professional service."
     },
     "contact": {
-      "title": "Contact",
-      "description": "Get in touch with Student Cafeteria in Gliwice – address, phone, email and contact form."
+      "title": "Contact and directions",
+      "description": "Stołówka Studencka u Piotra, Łużycka 24, 44-100 Gliwice. Phone, email, opening hours, directions and contact form."
     }
   },
   "navigation": {
@@ -38,23 +38,26 @@
   },
   "mobileMenu": {
     "title": "STUDENT CAFETERIA",
-    "description": "Every day we serve homemade meals. For over 35 years we have been a meeting place for students where you can enjoy a delicious lunch and relax.",
+    "description": "Every day we serve homemade meals. For over 40 years we have been a meeting place for students where you can enjoy a delicious lunch and relax.",
     "contactTitle": "Contact",
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
-    "followUs": "Follow us"
+    "followUs": "Follow us",
+    "open": "Open menu"
   },
   "footer": {
     "location": "Find Us Here",
     "hours": "Opening Hours",
     "academicYear": "Academic year",
     "academicWeekdays": "Monday – Friday 8:00 AM – 6:00 PM",
-    "academicWeekend": "Saturday – Sunday 10:00 AM – 4:00 PM",
+    "academicWeekend": "Saturday 10:00 AM – 4:00 PM",
     "holidays": "Summer break",
     "holidayWeekdays": "Monday – Friday 9:00 AM – 5:00 PM",
     "holidayWeekend": "Saturday – Sunday Closed",
-    "copyright": "© {year} Student Cafeteria. All rights reserved."
+    "copyright": "© {year} Stołówka Studencka u Piotra. All rights reserved.",
+    "academicSunday": "Sunday Closed",
+    "directions": "Get directions"
   },
   "hero": {
     "title": "STUDENT CAFETERIA",
@@ -67,7 +70,8 @@
     "loading": "Loading menu...",
     "dishOfDay": "Dish of the Day",
     "special": "Special",
-    "soupOfDay": "Soup of the Day"
+    "soupOfDay": "Soup of the Day",
+    "imageAlt": "Pork cutlet with potatoes and coleslaw"
   },
   "promotions": {
     "title": "Student Promotions",
@@ -103,16 +107,20 @@
       "openingHours": "Opening Hours",
       "academicYear": "Academic year",
       "academicWeekdays": "Monday - Friday: 8:00 AM - 6:00 PM",
-      "academicWeekend": "Saturday - Sunday: 10:00 AM - 4:00 PM",
+      "academicWeekend": "Saturday: 10:00 AM - 4:00 PM",
       "holidays": "Summer break",
       "holidayWeekdays": "Monday - Friday: 9:00 AM - 5:00 PM",
-      "holidayWeekend": "Saturday - Sunday: Closed"
-    }
+      "holidayWeekend": "Saturday - Sunday: Closed",
+      "academicSunday": "Sunday: Closed",
+      "directions": "Get directions on Google Maps"
+    },
+    "pageTitle": "Contact and directions",
+    "intro": "Stołówka Studencka u Piotra, Łużycka 24, 44-100 Gliwice – next to the Silesian University of Technology campus."
   },
   "about": {
     "title": "Student Cafeteria since 1985",
     "paragraphs": {
-      "p1": "For over 35 years, we have been serving students delicious, homemade meals at affordable prices. Our cafeteria is a place where tradition meets modernity, and every dish is prepared with passion and attention to detail.",
+      "p1": "For over 40 years, we have been serving students delicious, homemade meals at affordable prices. Our cafeteria is a place where tradition meets modernity, and every dish is prepared with passion and attention to detail.",
       "p2": "We believe that a good meal is the foundation of a successful day of learning. That's why every morning our team of experienced chefs prepares fresh dishes from the finest ingredients. Our menu is varied and changes seasonally to always offer students something new and tasty.",
       "p3": "We are proud that over the years we have become not only a place to eat, but also a meeting point for students where they can relax, chat, and recharge before their next classes."
     },
@@ -187,7 +195,8 @@
         "description": "Spacious conference room designed for larger events, conferences, and training sessions. Equipped with professional sound, lighting, and projection systems. Ideal for groups up to 100 people, with flexible layout options."
       }
     },
-    "contactLink": "Contact us →"
+    "contactLink": "Contact us →",
+    "heading": "Conference rooms in Gliwice"
   },
   "events": {
     "title": "Special Events",
@@ -292,6 +301,26 @@
   },
   "languageSwitcher": {
     "pl": "PL",
-    "en": "EN"
+    "en": "EN",
+    "label": "Change language"
+  },
+  "common": {
+    "logoAlt": "Stołówka Studencka u Piotra – logo",
+    "facebookLabel": "Stołówka Studencka u Piotra on Facebook"
+  },
+  "home": {
+    "introTitle": "Homemade lunches next to the Silesian University of Technology",
+    "introText": "Stołówka Studencka u Piotra is a home-style canteen next to the Silesian University of Technology campus in Gliwice, at Łużycka 24. Since 1985 we have been cooking soups and main courses every day at student prices. With a valid student ID you get 10% off everything (except alcohol), plus extra deals on individual weekdays."
+  },
+  "infoBar": {
+    "address": "Address",
+    "hours": "Opening hours",
+    "hoursValue": "Mon–Fri 8:00–18:00 · Sat 10:00–16:00 · Sun closed",
+    "phone": "Phone",
+    "directions": "Get directions"
+  },
+  "menuPage": {
+    "title": "Menu",
+    "intro": "Homemade soups, main courses and sides at student prices. With a valid student ID you get 10% off everything (except alcohol). Today’s daily menu is on the home page."
   }
 }

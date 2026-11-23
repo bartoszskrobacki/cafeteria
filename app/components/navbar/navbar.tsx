@@ -6,6 +6,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export const Navbar = () => {
   const t = useTranslations("navigation");
+  const common = useTranslations("common");
 
   const navItems = [
     { href: "/", label: t("home") },
@@ -19,25 +20,22 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="fixed h-24 flex items-center gap-4 bg-white text-primary-500 w-full justify-between px-4 z-20 text-primary">
-      <Link href="/" className="relative shrink-0 w-48 xl:w-64 h-16">
-        <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+    <div className="text-primary-500 text-primary fixed z-20 flex h-24 w-full items-center justify-between gap-4 bg-white px-4">
+      <Link href="/" className="relative h-16 w-36 shrink-0 sm:w-48 xl:w-64">
+        <Image src="/logo.webp" alt={common("logoAlt")} fill className="object-contain" priority />
       </Link>
-      <nav className="hidden lg:block min-w-0">
-        <ul className="flex flex-nowrap items-center justify-center gap-4 xl:gap-8 2xl:gap-12 whitespace-nowrap font-bold text-[10px] xl:text-[11px] tracking-[0.2em] xl:tracking-[0.3em] underline-offset-3">
+      <nav className="hidden min-w-0 lg:block">
+        <ul className="flex flex-nowrap items-center justify-center gap-4 text-[10px] font-bold tracking-[0.2em] whitespace-nowrap underline-offset-3 xl:gap-8 xl:text-[11px] xl:tracking-[0.3em] 2xl:gap-12">
           {navItems.map((item) => (
             <li key={item.href}>
-              <Link
-                href={item.href}
-                className="hover:text-coral-accent transition-colors"
-              >
+              <Link href={item.href} className="hover:text-coral-accent transition-colors">
                 {item.label}
               </Link>
             </li>
           ))}
         </ul>
       </nav>
-      <div className="flex shrink-0 items-center gap-4">
+      <div className="flex shrink-0 items-center gap-2">
         <LanguageSwitcher />
         <SheetDemo />
       </div>
